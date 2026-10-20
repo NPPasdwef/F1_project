@@ -10,6 +10,5 @@ router.get('/', (req, res) => {
     scripts: ['/assets/js/index.js'], // เช่น '/assets/js/home.js'
   });
 });
-router.use('/customer', require('./customer/customer.routes.js'))
 
 module.exports = router;
