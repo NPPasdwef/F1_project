@@ -28,3 +28,22 @@ fetch('/api/restaurant/signature', { credentials: 'include', method: 'GET' }).th
         console.log(data)
     }
 })
+fetch('/api/restaurant/promotion').then(res => res.json()).then(data => {
+    if (data.status === 200) {
+        const container = document.getElementById("container-promotion")
+        const template = document.getElementById("template-promotion")
+        data.data.list.forEach(element => {
+            const clone = template.content.cloneNode(true)
+            clone.querySelector('[data-role="image-p"]').src = element.image
+            clone.querySelector('[data-role="image-p"]').alt = element.name
+            clone.querySelector('[data-role="tag-p"]').textContent = element.tag
+            clone.querySelector('[data-role="name-p"]').textContent = element.name
+            clone.querySelector('[data-role="description-p"]').textContent = element.description
+            container.appendChild(clone)
+        });
+
+    }
+    else {
+        console.log(data)
+    }
+})
