@@ -9,3 +9,12 @@ fetch('/api/restaurant/overview').then(res => res.json()).then(data => {
         console.log(data)
     }
 })
+fetch('/api/restaurant/signature').then(res => res.json()).then(data => {
+    if (data.status === 200) {
+        data.data.list.forEach(element => {
+            console.log(element.id)
+        });
+    } else {
+        console.log(data)
+    }
+})
