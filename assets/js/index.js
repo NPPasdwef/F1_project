@@ -1,4 +1,4 @@
-fetch('/api/restaurant/overview').then(res => res.json()).then(data => {
+fetch('/api/restaurant/overview', { credentials: 'include', method: 'GET' }).then(res => res.json()).then(data => {
     if (data.status === 200) {
         document.getElementById("minute-order").textContent = data.data.prep_minutes
         document.getElementById("menu-ready").textContent = data.data.menu_count
@@ -9,10 +9,20 @@ fetch('/api/restaurant/overview').then(res => res.json()).then(data => {
         console.log(data)
     }
 })
-fetch('/api/restaurant/signature').then(res => res.json()).then(data => {
+fetch('/api/restaurant/signature', { credentials: 'include', method: 'GET' }).then(res => res.json()).then(data => {
     if (data.status === 200) {
+        const container = document.getElementById('container-signature')
+        const template = document.getElementById('template-signature')
         data.data.list.forEach(element => {
-            console.log(element.id)
+            const clone = template.content.cloneNode(true)
+            clone.querySelector('[data-role="image"]').src = element.image
+            clone.querySelector('[data-role="image"]').alt = element.name
+            clone.querySelector('[data-role="name"]').textContent = element.name
+            clone.querySelector('[data-role="category"]').textContent = element.category
+            clone.querySelector('[data-role="description"]').textContent = element.description
+            clone.querySelector('[data-role="price"]').textContent = `${element.price.toLocaleString('th-TH')} บาท`
+            clone.querySelector('[data-role="link"]').href = '/customer'
+            container.appendChild(clone)
         });
     } else {
         console.log(data)
