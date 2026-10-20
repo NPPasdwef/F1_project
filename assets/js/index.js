@@ -47,3 +47,20 @@ fetch('/api/restaurant/promotion').then(res => res.json()).then(data => {
         console.log(data)
     }
 })
+fetch("/api/review").then(res => res.json()).then(data => {
+    if (data.status === 200) {
+        const template = document.getElementById("review")
+        const container = document.getElementById("container-review")
+        document.getElementById("average-rate").textContent = `คะแนนเฉลี่ย ${data.data.average_rating}/5`
+        data.data.list.forEach(element => {
+            const clone = template.content.cloneNode(true)
+            clone.querySelector('[data-role="comment"]').textContent = element.comment
+            clone.querySelector('[data-role="name"]').textContent = element.name
+            clone.querySelector('[data-role="customer-type"]').textContent = element.customer_type
+            container.appendChild(clone)
+        });
+    }
+    else {
+        console.log(data)
+    }
+})

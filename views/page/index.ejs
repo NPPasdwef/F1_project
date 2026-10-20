@@ -396,28 +396,30 @@
       <div class="align-self-lg-end">
         <span class="badge text-bg-warning">
           <i class="fa-solid fa-star me-1"></i>
-          คะแนนเฉลี่ย 4.8/5
+          <span id="average-rate">คะแนนเฉลี่ย 4.8/5</span>
         </span>
       </div>
     </div>
-    <div class="row g-4">
-      <div class="col-12 col-md-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <div class="text-warning mb-3">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+    <div id="container-review" class="row g-4">
+      <template id="review">
+        <div class="col-12 col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="text-warning mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p data-role="comment" class="text-body-secondary">"สแกนโต๊ะแล้วสั่งเองได้เลย เห็นว่าอาหารกำลังปรุงหรือพร้อมเสิร์ฟแล้ว ไม่ต้องเรียกพนักงานบ่อย"</p>
+              <div data-role="name" class="fw-semibold">คุณเมย์</div>
+              <div data-role="customer-type" class="small text-body-secondary">ลูกค้าทานที่ร้าน</div>
             </div>
-            <p class="text-body-secondary">"สแกนโต๊ะแล้วสั่งเองได้เลย เห็นว่าอาหารกำลังปรุงหรือพร้อมเสิร์ฟแล้ว ไม่ต้องเรียกพนักงานบ่อย"</p>
-            <div class="fw-semibold">คุณเมย์</div>
-            <div class="small text-body-secondary">ลูกค้าทานที่ร้าน</div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-md-4">
+      </template>
+      <!-- <div class="col-12 col-md-4">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
             <div class="text-warning mb-3">
@@ -432,8 +434,8 @@
             <div class="small text-body-secondary">ลูกค้ากลับบ้าน</div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-md-4">
+      </div> -->
+      <!-- <div class="col-12 col-md-4">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
             <div class="text-warning mb-3">
@@ -448,7 +450,7 @@
             <div class="small text-body-secondary">ลูกค้าประจำ</div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
