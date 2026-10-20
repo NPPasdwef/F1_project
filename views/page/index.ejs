@@ -10,7 +10,8 @@
               <i class="fa-solid fa-circle-check me-1"></i>เปิดวันนี้ 10:00 - 22:00
             </span>
             <span class="badge rounded-pill text-bg-warning">
-              <i class="fa-solid fa-star me-1"></i>4.8 จากลูกค้า
+              <i class="fa-solid fa-star me-1"></i>
+              <span id="rate">0</span> จากลูกค้า
             </span>
           </div>
           <h1 class="display-5 fw-semibold mb-3">ครัวบ้านดี อาหารไทยอบอุ่นที่สั่งได้ทั้งหน้าร้านและออนไลน์</h1>
@@ -26,19 +27,19 @@
           <div class="row g-3">
             <div class="col-6 col-md-4">
               <div class="border rounded bg-light p-3 h-100">
-                <div class="h4 mb-0">18</div>
+                <div class="h4 mb-0" id="minute-order">0</div>
                 <div class="small text-body-secondary">นาทีเฉลี่ยต่อออเดอร์</div>
               </div>
             </div>
             <div class="col-6 col-md-4">
               <div class="border rounded bg-light p-3 h-100">
-                <div class="h4 mb-0">42</div>
+                <div id="menu-ready" class="h4 mb-0">0</div>
                 <div class="small text-body-secondary">เมนูพร้อมขาย</div>
               </div>
             </div>
             <div class="col-12 col-md-4">
               <div class="border rounded bg-light p-3 h-100">
-                <div class="h4 mb-0">3</div>
+                <div id="service-count" class="h4 mb-0">0</div>
                 <div class="small text-body-secondary">ทานที่ร้าน กลับบ้าน เดลิเวอรี</div>
               </div>
             </div>
