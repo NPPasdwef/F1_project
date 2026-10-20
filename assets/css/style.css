@@ -1,0 +1,15 @@
+    #staff_menu>.dropdown-menu {
+        position: static;
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+
+    @media (min-width: 992px) {
+        #staff_menu>.dropdown-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: auto;
+            max-height: calc(100dvh - 5rem);
+        }
+    }
