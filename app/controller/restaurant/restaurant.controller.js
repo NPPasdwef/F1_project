@@ -17,28 +17,28 @@ module.exports = {
                 list: [{
                     id: 1,
                     category: 'ขายดี',
-                    name: 'พ่อ',
+                    name: 'ข้าวกะเพราไก่ไข่ดาว',
                     description: 'ผัดไฟแรง กลิ่นกะเพราชัด เลือกระดับความเผ็ดได้',
                     image: '/assets/img/upload/menu/single/menu-01.jpg',
                     price: 85
                 }, {
                     id: 2,
                     category: 'แนะนำ',
-                    name: 'มึง',
+                    name: 'ต้มยำกุ้งน้ำข้น',
                     description: 'หม้อไฟรสจัดจ้านสำหรับแบ่งกัน 2-3 คน',
                     image: '/assets/img/upload/menu/shared/menu-07.jpg',
                     price: 180
                 }, {
                     id: 3,
                     category: 'ครัวบ้านดี',
-                    name: 'ตาย',
+                    name: 'ผัดไทยกุ้งสด',
                     description: 'เส้นเหนียวนุ่ม ซอสหวานเค็มเปรี้ยว กุ้งตัวโต',
                     image: '/assets/img/upload/menu/noodle/menu-13.jpg',
                     price: 120
                 }, {
                     id: 4,
                     category: 'เย็นชื่นใจ',
-                    name: 'ควย',
+                    name: 'ชาไทยเย็น',
                     description: 'เลือกความหวาน แยกน้ำแข็ง หรือเพิ่มท็อปปิงได้',
                     image: '/assets/img/upload/menu/drink/menu-25.jpg',
                     price: 45
