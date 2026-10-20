@@ -7,8 +7,9 @@ router.get('/', (req, res) => {
   res.render(path.join(__dirname, '../../../views/page/index.ejs'), {
     layout: path.join(__dirname, '../../../views/layouts/main.layout.ejs'),
     styles: [], // เช่น '/assets/css/home.css'
-    scripts: [], // เช่น '/assets/js/home.js'
+    scripts: ['/assets/js/index.js'], // เช่น '/assets/js/home.js'
   });
 });
+router.use('/customer', require('./customer/customer.routes.js'))
 
 module.exports = router;
