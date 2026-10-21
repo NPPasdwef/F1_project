@@ -1,0 +1,112 @@
+﻿<main class="container-fluid py-4">
+  <h1 class="h3 mb-4">ค้นหาและตรวจสอบออเดอร์</h1>
+  <div class="card mb-4">
+    <div class="card-body">
+      <form class="row g-3" action="#" method="get">
+        <div class="col-12 col-md-2">
+          <label class="form-label" for="orderNo">เลขที่</label>
+          <input class="form-control" id="orderNo" placeholder="ORD-...">
+        </div>
+        <div class="col-12 col-md-2">
+          <label class="form-label" for="date">วันที่</label>
+          <input class="form-control" type="date" id="date" value="2026-05-05">
+        </div>
+        <div class="col-12 col-md-2">
+          <label class="form-label" for="type">ประเภท</label>
+          <select class="form-select" id="type">
+            <option>ทั้งหมด</option>
+            <option>ทานที่ร้าน</option>
+            <option>กลับบ้าน</option>
+            <option>เดลิเวอรี</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-2">
+          <label class="form-label" for="status">สถานะ</label>
+          <select class="form-select" id="status">
+            <option>ทั้งหมด</option>
+            <option>กำลังปรุง</option>
+            <option>รอชำระ</option>
+            <option>ปิดบิลแล้ว</option>
+            <option>ยกเลิก</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-2">
+          <label class="form-label" for="customer">ลูกค้า</label>
+          <input class="form-control" id="customer">
+        </div>
+        <div class="col-12 col-md-2 d-flex align-items-end">
+          <button class="btn btn-primary w-100" type="submit">ค้นหา</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle mb-0">
+        <thead class="table-light">
+          <tr>
+            <th>ออเดอร์</th>
+            <th>เวลา</th>
+            <th>ประเภท</th>
+            <th>ลูกค้า</th>
+            <th>สถานะ</th>
+            <th>ชำระเงิน</th>
+            <th class="text-end">ยอด</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ORD-20260505-018</td>
+            <td>18:42</td>
+            <td>ทานที่ร้าน A2</td>
+            <td>คุณมะลิ</td>
+            <td>
+              <span class="badge text-bg-info">รอชำระ</span>
+            </td>
+            <td>
+              <span class="badge text-bg-warning">unpaid</span>
+            </td>
+            <td class="text-end">471</td>
+            <td>
+              <a class="btn btn-sm btn-outline-primary" href="/pos/order-detail">รายละเอียด</a>
+            </td>
+          </tr>
+          <tr>
+            <td>ORD-20260505-014</td>
+            <td>17:45</td>
+            <td>เดลิเวอรี</td>
+            <td>คุณแอน</td>
+            <td>
+              <span class="badge text-bg-success">closed</span>
+            </td>
+            <td>
+              <span class="badge text-bg-success">paid</span>
+            </td>
+            <td class="text-end">530</td>
+            <td>
+              <a class="btn btn-sm btn-outline-primary" href="/cashier/receipt">ใบเสร็จ</a>
+            </td>
+          </tr>
+          <tr>
+            <td>ORD-20260505-009</td>
+            <td>16:30</td>
+            <td>กลับบ้าน</td>
+            <td>คุณนนท์</td>
+            <td>
+              <span class="badge text-bg-danger">cancelled</span>
+            </td>
+            <td>
+              <span class="badge text-bg-secondary">voided</span>
+            </td>
+            <td class="text-end">0</td>
+            <td>
+              <a class="btn btn-sm btn-outline-primary" href="/admin/audit-logs">Audit</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>

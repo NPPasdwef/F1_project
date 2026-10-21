@@ -37,4 +37,11 @@ router.get('/menu', (req, res) => {
         scripts: ['']
     })
 })
+router.get('/orders', (req, res) => {
+    res.render(path.join(__dirname, '../../../../views/page/admin/orders.ejs'), {
+        layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
+        styles: [''],
+        scripts: ['']
+    })
+})
 module.exports = router
