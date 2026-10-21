@@ -1,0 +1,110 @@
+﻿<main class="container-fluid py-4">
+  <h1 class="h3 mb-4">จัดการโต๊ะและโซน</h1>
+  <div class="row g-4">
+    <div class="col-12 col-xl-4">
+      <div class="card">
+        <div class="card-header bg-white fw-semibold">เพิ่มโต๊ะ</div>
+        <div class="card-body">
+          <form action="#" method="post">
+            <div class="mb-3">
+              <label class="form-label" for="zone">โซน</label>
+              <select class="form-select" id="zone">
+                <option>ด้านหน้า</option>
+                <option>ห้องแอร์</option>
+                <option>ระเบียง</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="tableNo">หมายเลขโต๊ะ</label>
+              <input class="form-control" id="tableNo" value="B4">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="seats">จำนวนที่นั่ง</label>
+              <input class="form-control" type="number" id="seats" value="4">
+            </div>
+            <div class="mb-4">
+              <label class="form-label" for="status">สถานะ</label>
+              <select class="form-select" id="status">
+                <option>available</option>
+                <option>reserved</option>
+                <option>disabled</option>
+              </select>
+            </div>
+            <button class="btn btn-primary w-100" type="submit">บันทึกโต๊ะ</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-xl-8">
+      <div class="card">
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>โต๊ะ</th>
+                <th>โซน</th>
+                <th>ที่นั่ง</th>
+                <th>QR Code</th>
+                <th>สถานะ</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A1</td>
+                <td>ด้านหน้า</td>
+                <td>4</td>
+                <td>QR-A1</td>
+                <td>
+                  <span class="badge text-bg-danger">occupied</span>
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+                </td>
+              </tr>
+              <tr>
+                <td>A2</td>
+                <td>ด้านหน้า</td>
+                <td>4</td>
+                <td>QR-A2</td>
+                <td>
+                  <span class="badge text-bg-danger">occupied</span>
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+                </td>
+              </tr>
+              <tr>
+                <td>B1</td>
+                <td>ห้องแอร์</td>
+                <td>6</td>
+                <td>QR-B1</td>
+                <td>
+                  <span class="badge text-bg-success">available</span>
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+                </td>
+              </tr>
+              <tr>
+                <td>C3</td>
+                <td>ระเบียง</td>
+                <td>2</td>
+                <td>QR-C3</td>
+                <td>
+                  <span class="badge text-bg-warning">cleaning</span>
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card-footer text-body-secondary">
+          ตัวอย่างนี้แสดงรหัสโต๊ะแทนรูป QR จริง
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

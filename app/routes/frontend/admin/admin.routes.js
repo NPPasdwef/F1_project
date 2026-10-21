@@ -73,4 +73,11 @@ router.get('/users', (req, res) => {
         scripts: ['']
     })
 })
+router.get('/zones-tables', (req, res) => {
+    res.render(path.join(__dirname, '../../../../views/page/admin/zones-tables.ejs'), {
+        layout: path.join(__dirname, '../.../../../../../views/layouts/main.layout.ejs'),
+        styles: [''],
+        scripts: ['']
+    })
+})
 module.exports = router
