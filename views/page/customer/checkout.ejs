@@ -1,0 +1,102 @@
+﻿<main class="container py-4">
+  <div class="d-flex flex-column flex-md-row justify-content-between gap-3 mb-4">
+    <div>
+      <p class="text-primary fw-semibold mb-1">ขั้นตอนถัดจากตะกร้า</p>
+      <h1 class="h3 mb-0">ยืนยันออเดอร์</h1>
+    </div>
+    <a class="btn btn-outline-primary align-self-start" href="/customer/cart">
+      <i class="fa-solid fa-arrow-left me-1"></i>กลับไปตะกร้า
+    </a>
+  </div>
+  <div class="row g-4">
+    <div class="col-12 col-lg-7">
+      <div class="card mb-4">
+        <div class="card-header bg-white fw-semibold">ประเภทการสั่ง</div>
+        <div class="card-body">
+          <div class="row g-3">
+            <div class="col-12 col-md-4">
+              <input class="btn-check" type="radio" name="orderType" id="dineIn" checked>
+              <label class="btn btn-outline-primary w-100" for="dineIn">ทานที่ร้าน</label>
+            </div>
+            <div class="col-12 col-md-4">
+              <input class="btn-check" type="radio" name="orderType" id="takeaway">
+              <label class="btn btn-outline-primary w-100" for="takeaway">กลับบ้าน</label>
+            </div>
+            <div class="col-12 col-md-4">
+              <input class="btn-check" type="radio" name="orderType" id="delivery">
+              <label class="btn btn-outline-primary w-100" for="delivery">เดลิเวอรี</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header bg-white fw-semibold">ข้อมูลลูกค้าและการรับอาหาร</div>
+        <div class="card-body">
+          <form action="/customer/order-status.html" method="get">
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="customerName">ชื่อลูกค้า</label>
+                <input class="form-control" id="customerName" name="customerName" value="คุณมะลิ">
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="phone">เบอร์โทร</label>
+                <input class="form-control" id="phone" name="phone" value="081-234-5678">
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="tableNo">โต๊ะ</label>
+                <input class="form-control" id="tableNo" name="tableNo" value="A2">
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="pickupTime">เวลาเข้ารับโดยประมาณ</label>
+                <input class="form-control" id="pickupTime" name="pickupTime" value="เร็วที่สุด">
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="address">ที่อยู่จัดส่ง</label>
+                <textarea class="form-control" id="address" name="address" rows="3" placeholder="กรอกเมื่อเลือกเดลิเวอรี"></textarea>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="orderNote">หมายเหตุรวม</label>
+                <textarea class="form-control" id="orderNote" name="orderNote" rows="2" placeholder="เช่น ขอช้อนส้อมเพิ่ม"></textarea>
+              </div>
+            </div>
+            <button class="btn btn-success mt-4" type="submit">ยืนยันและส่งเข้าครัว</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-5">
+      <div class="card">
+        <div class="card-header bg-white fw-semibold">สรุปก่อนยืนยัน</div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush mb-3">
+            <li class="list-group-item d-flex justify-content-between px-0">
+              <span>กะเพราไก่ไข่ดาว x2</span>
+              <span>190</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between px-0">
+              <span>ต้มยำกุ้ง x1</span>
+              <span>180</span>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-between mb-2">
+            <span>ยอดรวม</span>
+            <span>370 บาท</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span>ค่าบริการ</span>
+            <span>37 บาท</span>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <span>ภาษี</span>
+            <span>28 บาท</span>
+          </div>
+          <div class="d-flex justify-content-between fw-semibold fs-5">
+            <span>ยอดสุทธิ</span>
+            <span>435 บาท</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

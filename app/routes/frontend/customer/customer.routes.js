@@ -17,4 +17,11 @@ router.get('/cart', (req, res) => {
         scripts: ['']
     })
 })
+router.get('/checkout', (req, res) => {
+    res.render(path.join(__dirname, '../../../../views/page/customer/checkout.ejs'), {
+        layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
+        styles: [''],
+        scripts: ['']
+    })
+})
 module.exports = router
