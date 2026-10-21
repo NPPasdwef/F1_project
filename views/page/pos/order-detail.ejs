@@ -1,0 +1,101 @@
+﻿<main class="container-fluid py-4">
+  <div class="card mb-4">
+    <div class="card-body">
+      <div class="d-flex flex-column flex-lg-row justify-content-between gap-3">
+        <div>
+          <h1 class="h3 mb-1">ORD-20260505-018</h1>
+          <p class="text-body-secondary mb-0">โต๊ะ A2 | ทานที่ร้าน | เปิดโดย staff01 เวลา 18:42</p>
+        </div>
+        <span class="badge text-bg-primary align-self-start fs-6">กำลังปรุง</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-12 col-xl-8">
+      <div class="card">
+        <div class="card-header bg-white fw-semibold">รายการอาหาร</div>
+        <div class="table-responsive">
+          <table class="table align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>รายการ</th>
+                <th>หมายเหตุ</th>
+                <th>สถานะครัว</th>
+                <th>สถานะเสิร์ฟ</th>
+                <th class="text-end">รวม</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>กะเพราไก่ไข่ดาว x2</td>
+                <td>ไม่ใส่ถั่วฝักยาว</td>
+                <td>
+                  <span class="badge text-bg-primary">กำลังปรุง</span>
+                </td>
+                <td>
+                  <span class="badge text-bg-secondary">ยังไม่เสิร์ฟ</span>
+                </td>
+                <td class="text-end">190</td>
+              </tr>
+              <tr>
+                <td>ต้มยำกุ้ง x1</td>
+                <td>เผ็ดน้อย</td>
+                <td>
+                  <span class="badge text-bg-warning">รอปรุง</span>
+                </td>
+                <td>
+                  <span class="badge text-bg-secondary">ยังไม่เสิร์ฟ</span>
+                </td>
+                <td class="text-end">180</td>
+              </tr>
+              <tr>
+                <td>น้ำเปล่า x2</td>
+                <td>-</td>
+                <td>
+                  <span class="badge text-bg-info">ไม่เข้าครัว</span>
+                </td>
+                <td>
+                  <span class="badge text-bg-success">เสิร์ฟแล้ว</span>
+                </td>
+                <td class="text-end">30</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-xl-4">
+      <div class="card">
+        <div class="card-header bg-white fw-semibold">สรุปยอดและการทำงาน</div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between mb-2">
+            <span>ยอดรวม</span>
+            <span>400 บาท</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span>ส่วนลด</span>
+            <span>0 บาท</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span>ค่าบริการ</span>
+            <span>40 บาท</span>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <span>ภาษี</span>
+            <span>31 บาท</span>
+          </div>
+          <div class="d-flex justify-content-between fw-semibold fs-5 mb-4">
+            <span>ยอดสุทธิ</span>
+            <span>471 บาท</span>
+          </div>
+          <div class="d-grid gap-2">
+            <a class="btn btn-outline-primary" href="/pos/order-items">เพิ่มรายการ</a>
+            <a class="btn btn-outline-success" href="/pos/ready-to-serve">ดูรายการพร้อมเสิร์ฟ</a>
+            <a class="btn btn-primary" href="/cashier/payment">ไปหน้าชำระเงิน</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

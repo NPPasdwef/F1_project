@@ -1,0 +1,78 @@
+﻿<main class="container-fluid py-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+      <h1 class="h3 mb-1">รายการพร้อมเสิร์ฟ</h1>
+      <p class="text-body-secondary mb-0">รายการจากครัวที่รอพนักงานนำไปเสิร์ฟหรือส่งมอบ</p>
+    </div>
+    <button class="btn btn-primary" type="button">บันทึกสถานะเสิร์ฟ</button>
+  </div>
+
+  <div class="card">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle mb-0">
+        <thead class="table-light">
+          <tr>
+            <th>เวลา ready</th>
+            <th>ออเดอร์</th>
+            <th>โต๊ะ/ประเภท</th>
+            <th>รายการ</th>
+            <th>จำนวน</th>
+            <th>สถานะส่งมอบ</th>
+            <th>อัปเดต</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>18:52</td>
+            <td>ORD-20260505-017</td>
+            <td>B1</td>
+            <td>ปีกไก่ทอด</td>
+            <td>1</td>
+            <td>
+              <span class="badge text-bg-warning">รอเสิร์ฟ</span>
+            </td>
+            <td>
+              <select class="form-select form-select-sm" aria-label="อัปเดตสถานะส่งมอบ ORD-20260505-017 ปีกไก่ทอด">
+                <option>รอเสิร์ฟ</option>
+                <option>เสิร์ฟแล้ว</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>18:53</td>
+            <td>ORD-20260505-016</td>
+            <td>กลับบ้าน</td>
+            <td>ข้าวผัดกุ้ง</td>
+            <td>2</td>
+            <td>
+              <span class="badge text-bg-warning">รอรับอาหาร</span>
+            </td>
+            <td>
+              <select class="form-select form-select-sm" aria-label="อัปเดตสถานะส่งมอบ ORD-20260505-016 ข้าวผัดกุ้ง">
+                <option>รอรับอาหาร</option>
+                <option>รับอาหารแล้ว</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>18:55</td>
+            <td>ORD-20260505-014</td>
+            <td>เดลิเวอรี</td>
+            <td>ต้มจืดเต้าหู้</td>
+            <td>1</td>
+            <td>
+              <span class="badge text-bg-warning">รอจัดส่ง</span>
+            </td>
+            <td>
+              <select class="form-select form-select-sm" aria-label="อัปเดตสถานะส่งมอบ ORD-20260505-014 ต้มจืดเต้าหู้">
+                <option>รอจัดส่ง</option>
+                <option>กำลังจัดส่ง</option>
+                <option>ส่งสำเร็จ</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,155 @@
+﻿<main class="container-fluid py-4">
+  <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 mb-4">
+    <div>
+      <h1 class="h3 mb-1">เพิ่มรายการอาหาร</h1>
+      <p class="text-body-secondary mb-0">ORD-20260505-019 | โต๊ะ B1 | staff01</p>
+    </div>
+    <a class="btn btn-success" href="/pos/order-detail">ส่งรายการเข้าครัว</a>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-12 col-xl-7">
+      <div class="card">
+        <div class="card-header bg-white">
+          <form class="row g-2" action="#" method="get">
+            <div class="col-12 col-md-7">
+              <input class="form-control" type="search" placeholder="ค้นหาเมนู">
+            </div>
+            <div class="col-12 col-md-3">
+              <select class="form-select" aria-label="กรองหมวดหมู่เมนู">
+                <option>ทั้งหมด</option>
+                <option>อาหารจานเดียว</option>
+                <option>เครื่องดื่ม</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-2">
+              <button class="btn btn-outline-primary w-100" type="submit">ค้นหา</button>
+            </div>
+          </form>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>เมนู</th>
+                <th>สถานะ</th>
+                <th class="text-end">ราคา</th>
+                <th>จำนวน</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ข้าวกะเพราไก่ไข่ดาว</td>
+                <td>
+                  <span class="badge text-bg-success">พร้อมขาย</span>
+                </td>
+                <td class="text-end">85</td>
+                <td>
+                  <input class="form-control form-control-sm" type="number" min="1" value="1" aria-label="จำนวนข้าวกะเพราไก่ไข่ดาว">
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-primary" type="button">เพิ่ม</button>
+                </td>
+              </tr>
+              <tr>
+                <td>ต้มยำกุ้งน้ำข้น</td>
+                <td>
+                  <span class="badge text-bg-success">พร้อมขาย</span>
+                </td>
+                <td class="text-end">180</td>
+                <td>
+                  <input class="form-control form-control-sm" type="number" min="1" value="1" aria-label="จำนวนต้มยำกุ้งน้ำข้น">
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-primary" type="button">เพิ่ม</button>
+                </td>
+              </tr>
+              <tr>
+                <td>น้ำเปล่า</td>
+                <td>
+                  <span class="badge text-bg-success">ไม่เข้าครัว</span>
+                </td>
+                <td class="text-end">15</td>
+                <td>
+                  <input class="form-control form-control-sm" type="number" min="1" value="2" aria-label="จำนวนน้ำเปล่า">
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-primary" type="button">เพิ่ม</button>
+                </td>
+              </tr>
+              <tr>
+                <td>สเต๊กหมู</td>
+                <td>
+                  <span class="badge text-bg-secondary">ปิดขาย</span>
+                </td>
+                <td class="text-end">159</td>
+                <td>
+                  <input class="form-control form-control-sm" type="number" min="1" value="1" disabled aria-label="จำนวนสเต๊กหมู">
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-outline-secondary" type="button" disabled>เพิ่มไม่ได้</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-xl-5">
+      <div class="card">
+        <div class="card-header bg-white fw-semibold">รายการในออเดอร์</div>
+        <div class="table-responsive">
+          <table class="table align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>รายการ</th>
+                <th>จำนวน</th>
+                <th class="text-end">รวม</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="fw-semibold">กะเพราไก่ไข่ดาว</div>
+                  <div class="small text-body-secondary">ไม่ใส่ถั่วฝักยาว</div>
+                </td>
+                <td>2</td>
+                <td class="text-end">190</td>
+                <td>
+                  <button class="btn btn-sm btn-outline-danger">ลบ</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="fw-semibold">น้ำเปล่า</div>
+                  <div class="small text-body-secondary">ไม่ต้องเข้าครัว</div>
+                </td>
+                <td>2</td>
+                <td class="text-end">30</td>
+                <td>
+                  <button class="btn btn-sm btn-outline-danger">ลบ</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card-body border-top">
+          <div class="d-flex justify-content-between mb-2">
+            <span>ยอดรวม</span>
+            <span>220 บาท</span>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <span>ภาษี/ค่าบริการ</span>
+            <span>39 บาท</span>
+          </div>
+          <div class="d-flex justify-content-between fw-semibold fs-5">
+            <span>ยอดสุทธิ</span>
+            <span>259 บาท</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

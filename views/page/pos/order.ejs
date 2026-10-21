@@ -1,0 +1,66 @@
+﻿<main class="container py-4">
+  <h1 class="h3 mb-4">เปิดออเดอร์โดยพนักงาน</h1>
+  <div class="row g-4">
+    <div class="col-12 col-lg-7">
+      <div class="card">
+        <div class="card-header bg-white fw-semibold">ข้อมูลออเดอร์</div>
+        <div class="card-body">
+          <form action="/pos/order-items" method="get">
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="orderNo">เลขที่ออเดอร์</label>
+                <input class="form-control" id="orderNo" value="ORD-20260505-019" readonly>
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="staff">ผู้รับออเดอร์</label>
+                <input class="form-control" id="staff" value="staff01">
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="orderType">ประเภทการสั่ง</label>
+                <select class="form-select" id="orderType">
+                  <option>ทานที่ร้าน</option>
+                  <option>กลับบ้าน</option>
+                  <option>เดลิเวอรี</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="tableNo">โต๊ะ</label>
+                <select class="form-select" id="tableNo">
+                  <option>B1</option>
+                  <option>B2</option>
+                  <option>ไม่ระบุโต๊ะ</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="customer">ชื่อลูกค้า</label>
+                <input class="form-control" id="customer" placeholder="ไม่บังคับ">
+              </div>
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="phone">เบอร์โทร</label>
+                <input class="form-control" id="phone" placeholder="สำหรับกลับบ้าน/เดลิเวอรี">
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="note">หมายเหตุออเดอร์</label>
+                <textarea class="form-control" id="note" rows="3"></textarea>
+              </div>
+            </div>
+            <button class="btn btn-primary mt-4" type="submit">สร้างออเดอร์และเพิ่มรายการ</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-5">
+      <div class="card">
+        <div class="card-header bg-white fw-semibold">หมายเหตุการเปิดออเดอร์</div>
+        <div class="card-body">
+          <ul class="mb-0">
+            <li>เลขที่ออเดอร์จะถูกกำหนดให้อัตโนมัติ</li>
+            <li>โต๊ะที่มีออเดอร์ค้างอยู่ต้องไม่เปิดซ้ำ</li>
+            <li>เดลิเวอรีต้องมีข้อมูลติดต่อครบก่อนยืนยัน</li>
+            <li>ข้อมูลนี้เป็นตัวอย่าง HTML สำหรับจัดวางหน้าฟอร์มเปิดออเดอร์</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,115 @@
+﻿<main class="container-fluid py-4">
+  <div class="d-flex flex-column flex-lg-row justify-content-between gap-3 mb-4">
+    <div>
+      <h1 class="h3 mb-1">แดชบอร์ดพนักงาน</h1>
+      <p class="text-body-secondary mb-0">ภาพรวมงานหน้าร้านและสถานะบริการ</p>
+    </div>
+    <a class="btn btn-primary" href="/pos/order">เปิดออเดอร์ใหม่</a>
+  </div>
+
+  <div class="row g-3 mb-4">
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <p class="text-body-secondary mb-1">ออเดอร์เปิดอยู่</p>
+          <h2 class="h4 mb-0">18</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <p class="text-body-secondary mb-1">โต๊ะไม่ว่าง</p>
+          <h2 class="h4 mb-0">12</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <p class="text-body-secondary mb-1">พร้อมเสิร์ฟ</p>
+          <h2 class="h4 mb-0">7</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <p class="text-body-secondary mb-1">รอชำระเงิน</p>
+          <h2 class="h4 mb-0">5</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-12 col-xl-8">
+      <div class="card">
+        <div class="card-header bg-white fw-semibold">ออเดอร์ที่ต้องติดตาม</div>
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>ออเดอร์</th>
+                <th>โต๊ะ/ประเภท</th>
+                <th>สถานะ</th>
+                <th>เวลาเปิด</th>
+                <th class="text-end">ยอด</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ORD-20260505-018</td>
+                <td>A2</td>
+                <td>
+                  <span class="badge text-bg-primary">กำลังปรุง</span>
+                </td>
+                <td>18:42</td>
+                <td class="text-end">435</td>
+                <td>
+                  <a class="btn btn-sm btn-outline-primary" href="/pos/order-detail">ดู</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ORD-20260505-017</td>
+                <td>B1</td>
+                <td>
+                  <span class="badge text-bg-success">พร้อมเสิร์ฟ</span>
+                </td>
+                <td>18:30</td>
+                <td class="text-end">820</td>
+                <td>
+                  <a class="btn btn-sm btn-outline-primary" href="/pos/ready-to-serve">เสิร์ฟ</a>
+                </td>
+              </tr>
+              <tr>
+                <td>ORD-20260505-016</td>
+                <td>กลับบ้าน</td>
+                <td>
+                  <span class="badge text-bg-info">รอชำระ</span>
+                </td>
+                <td>18:21</td>
+                <td class="text-end">250</td>
+                <td>
+                  <a class="btn btn-sm btn-outline-primary" href="/cashier/payment">ชำระ</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-xl-4">
+      <div class="card">
+        <div class="card-header bg-white fw-semibold">ทางลัด</div>
+        <div class="list-group list-group-flush">
+          <a class="list-group-item list-group-item-action" href="/pos/tables">ตรวจสถานะโต๊ะ</a>
+          <a class="list-group-item list-group-item-action" href="/pos/order-items">เพิ่มรายการอาหาร</a>
+          <a class="list-group-item list-group-item-action" href="/kitchen/">ดูคิวครัว</a>
+          <a class="list-group-item list-group-item-action" href="/cashier/">ค้นหาเพื่อปิดบิล</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

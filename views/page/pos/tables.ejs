@@ -1,0 +1,111 @@
+﻿<main class="container-fluid py-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+      <h1 class="h3 mb-1">สถานะโต๊ะ</h1>
+      <p class="text-body-secondary mb-0">แสดงสถานะโต๊ะและออเดอร์ที่เปิดอยู่</p>
+    </div>
+    <a class="btn btn-primary" href="/pos/order">เปิดออเดอร์</a>
+  </div>
+
+  <div class="row g-3 mb-4">
+    <div class="col-6 col-md-3">
+      <div class="card border-success">
+        <div class="card-body">
+          <p class="mb-1 text-body-secondary">ว่าง</p>
+          <h2 class="h4 mb-0">8</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card border-danger">
+        <div class="card-body">
+          <p class="mb-1 text-body-secondary">ไม่ว่าง</p>
+          <h2 class="h4 mb-0">12</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card border-warning">
+        <div class="card-body">
+          <p class="mb-1 text-body-secondary">รอทำความสะอาด</p>
+          <h2 class="h4 mb-0">2</h2>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-3">
+      <div class="card border-secondary">
+        <div class="card-body">
+          <p class="mb-1 text-body-secondary">ปิดใช้งาน</p>
+          <h2 class="h4 mb-0">1</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle mb-0">
+        <thead class="table-light">
+          <tr>
+            <th>โต๊ะ</th>
+            <th>โซน</th>
+            <th>ที่นั่ง</th>
+            <th>ออเดอร์</th>
+            <th>สถานะ</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A1</td>
+            <td>ด้านหน้า</td>
+            <td>4</td>
+            <td>ORD-20260505-015</td>
+            <td>
+              <span class="badge text-bg-danger">ไม่ว่าง</span>
+            </td>
+            <td>
+              <a class="btn btn-sm btn-outline-primary" href="/pos/order-detail">ดูออเดอร์</a>
+            </td>
+          </tr>
+          <tr>
+            <td>A2</td>
+            <td>ด้านหน้า</td>
+            <td>4</td>
+            <td>ORD-20260505-018</td>
+            <td>
+              <span class="badge text-bg-danger">ไม่ว่าง</span>
+            </td>
+            <td>
+              <a class="btn btn-sm btn-outline-primary" href="/pos/order-detail">ดูออเดอร์</a>
+            </td>
+          </tr>
+          <tr>
+            <td>B1</td>
+            <td>ห้องแอร์</td>
+            <td>6</td>
+            <td>-</td>
+            <td>
+              <span class="badge text-bg-success">ว่าง</span>
+            </td>
+            <td>
+              <a class="btn btn-sm btn-primary" href="/pos/order">เปิดออเดอร์</a>
+            </td>
+          </tr>
+          <tr>
+            <td>C3</td>
+            <td>ระเบียง</td>
+            <td>2</td>
+            <td>-</td>
+            <td>
+              <span class="badge text-bg-warning">ทำความสะอาด</span>
+            </td>
+            <td>
+              <button class="btn btn-sm btn-outline-secondary" type="button">เปลี่ยนสถานะ</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
