@@ -52,4 +52,11 @@ router.get('/promotions', (req, res) => {
         scripts: ['']
     })
 })
+router.get('/reports', (req, res) => {
+    res.render(path.join(__dirname, '../../../../views/page/admin/reports.ejs'), {
+        layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
+        styles: [''],
+        scripts: ['']
+    })
+})
 module.exports = router
