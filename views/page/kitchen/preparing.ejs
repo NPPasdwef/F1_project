@@ -1,0 +1,96 @@
+﻿<main class="container-fluid py-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+      <h1 class="h3 mb-1">รายการกำลังปรุง</h1>
+      <p class="text-body-secondary mb-0">อัปเดตสถานะเป็นพร้อมเสิร์ฟหรือยกเลิกพร้อมเหตุผล</p>
+    </div>
+    <button class="btn btn-success" type="button">บันทึกสถานะ</button>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-12 col-xl-8">
+      <div class="card">
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>เริ่มปรุง</th>
+                <th>ออเดอร์</th>
+                <th>โต๊ะ/ประเภท</th>
+                <th>เมนู</th>
+                <th>จำนวน</th>
+                <th>เวลาผ่านไป</th>
+                <th>อัปเดต</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>18:45</td>
+                <td>ORD-20260505-018</td>
+                <td>A2</td>
+                <td>กะเพราไก่ไข่ดาว</td>
+                <td>2</td>
+                <td>9 นาที</td>
+                <td>
+                  <select class="form-select form-select-sm" aria-label="อัปเดตสถานะกะเพราไก่ไข่ดาว">
+                    <option>กำลังปรุง</option>
+                    <option>พร้อมเสิร์ฟ</option>
+                    <option>ยกเลิก</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>18:47</td>
+                <td>ORD-20260505-017</td>
+                <td>B1</td>
+                <td>ปีกไก่ทอด</td>
+                <td>1</td>
+                <td>7 นาที</td>
+                <td>
+                  <select class="form-select form-select-sm" aria-label="อัปเดตสถานะปีกไก่ทอด">
+                    <option>กำลังปรุง</option>
+                    <option>พร้อมเสิร์ฟ</option>
+                    <option>ยกเลิก</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>18:50</td>
+                <td>ORD-20260505-021</td>
+                <td>เดลิเวอรี</td>
+                <td>ผัดไทยกุ้งสด</td>
+                <td>1</td>
+                <td>4 นาที</td>
+                <td>
+                  <select class="form-select form-select-sm" aria-label="อัปเดตสถานะผัดไทยกุ้งสด">
+                    <option>กำลังปรุง</option>
+                    <option>พร้อมส่งมอบ</option>
+                    <option>ยกเลิก</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-xl-4">
+      <div class="card">
+        <div class="card-header bg-white fw-semibold">บันทึกเหตุผลยกเลิก</div>
+        <div class="card-body">
+          <form action="#" method="post">
+            <div class="mb-3">
+              <label class="form-label" for="cancelOrder">ออเดอร์/รายการ</label>
+              <input class="form-control" id="cancelOrder" placeholder="เช่น ORD-20260505-021 ผัดไทย">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="cancelReason">เหตุผล</label>
+              <textarea class="form-control" id="cancelReason" rows="4" placeholder="วัตถุดิบหมด หรือเหตุผลอื่น"></textarea>
+            </div>
+            <button class="btn btn-outline-danger w-100" type="submit">บันทึกเหตุผล</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
