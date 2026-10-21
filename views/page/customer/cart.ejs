@@ -1,0 +1,90 @@
+﻿<main class="container py-4">
+  <h1 class="h3 mb-4">ตะกร้าสินค้า</h1>
+  <div class="row g-4">
+    <div class="col-12 col-lg-8">
+      <div class="card">
+        <div class="table-responsive">
+          <table class="table align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>รายการ</th>
+                <th>หมายเหตุ</th>
+                <th class="text-end">ราคา</th>
+                <th class="text-center">จำนวน</th>
+                <th class="text-end">รวม</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="fw-semibold">ข้าวกะเพราไก่ไข่ดาว</div>
+                  <div class="small text-body-secondary">เผ็ดกลาง, ไข่ดาว</div>
+                </td>
+                <td>
+                  <input class="form-control form-control-sm" aria-label="หมายเหตุสำหรับข้าวกะเพราไก่ไข่ดาว" value="ไม่ใส่ถั่วฝักยาว">
+                </td>
+                <td class="text-end">95</td>
+                <td class="text-center">
+                  <input class="form-control form-control-sm text-center" type="number" min="1" value="2" aria-label="จำนวนข้าวกะเพราไก่ไข่ดาว">
+                </td>
+                <td class="text-end">190</td>
+                <td>
+                  <button class="btn btn-sm btn-outline-danger" type="button">ลบ</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="fw-semibold">ต้มยำกุ้งน้ำข้น</div>
+                  <div class="small text-body-secondary">เผ็ดน้อย</div>
+                </td>
+                <td>
+                  <input class="form-control form-control-sm" aria-label="หมายเหตุสำหรับต้มยำกุ้งน้ำข้น" value="ขอถ้วยแบ่ง">
+                </td>
+                <td class="text-end">180</td>
+                <td class="text-center">
+                  <input class="form-control form-control-sm text-center" type="number" min="1" value="1" aria-label="จำนวนต้มยำกุ้งน้ำข้น">
+                </td>
+                <td class="text-end">180</td>
+                <td>
+                  <button class="btn btn-sm btn-outline-danger" type="button">ลบ</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-header bg-white fw-semibold">สรุปยอด</div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between mb-2">
+            <span>ยอดรวม</span>
+            <span>370 บาท</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span>ส่วนลด</span>
+            <span>0 บาท</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span>ค่าบริการ</span>
+            <span>37 บาท</span>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <span>ภาษี</span>
+            <span>28 บาท</span>
+          </div>
+          <div class="d-flex justify-content-between fw-semibold fs-5">
+            <span>ยอดสุทธิ</span>
+            <span>435 บาท</span>
+          </div>
+          <div class="d-grid gap-2 mt-4">
+            <a class="btn btn-primary" href="/customer/checkout.html">ไปหน้ายืนยันออเดอร์</a>
+            <a class="btn btn-outline-secondary" href="/customer/index.html">เลือกเมนูเพิ่ม</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
