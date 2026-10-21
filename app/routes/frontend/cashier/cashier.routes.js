@@ -15,5 +15,18 @@ router.get('/bill-summary', (req, res) => {
         scripts: ['']
     })
 })
-
+router.get('/payment', (req, res) => {
+    res.render(path.join(__dirname, '../../../../views/page/cashier/payment.ejs'), {
+        layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
+        styles: [''],
+        scripts: ['']
+    })
+})
+router.get('/receipt', (req, res) => {
+    res.render(path.join(__dirname, '../../../../views/page/cashier/receipt.ejs'), {
+        layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
+        styles: [''],
+        scripts: ['']
+    })
+})
 module.exports = router

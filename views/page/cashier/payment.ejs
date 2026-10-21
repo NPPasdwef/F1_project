@@ -1,0 +1,104 @@
+﻿<main class="container-fluid py-4">
+  <div class="row g-4">
+    <div class="col-12 col-xl-8">
+      <div class="card">
+        <div class="card-header bg-white d-flex justify-content-between">
+          <div>
+            <h1 class="h5 mb-0">ORD-20260505-018</h1>
+            <div class="text-body-secondary">โต๊ะ A2 | คุณมะลิ | ทานที่ร้าน</div>
+          </div>
+          <span class="badge text-bg-info align-self-start">รอชำระ</span>
+        </div>
+        <div class="table-responsive">
+          <table class="table align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>รายการ</th>
+                <th class="text-end">ราคา</th>
+                <th class="text-end">จำนวน</th>
+                <th class="text-end">รวม</th>
+                <th>สถานะ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>กะเพราไก่ไข่ดาว</td>
+                <td class="text-end">95</td>
+                <td class="text-end">2</td>
+                <td class="text-end">190</td>
+                <td>
+                  <span class="badge text-bg-success">เสิร์ฟแล้ว</span>
+                </td>
+              </tr>
+              <tr>
+                <td>ต้มยำกุ้งน้ำข้น</td>
+                <td class="text-end">180</td>
+                <td class="text-end">1</td>
+                <td class="text-end">180</td>
+                <td>
+                  <span class="badge text-bg-success">เสิร์ฟแล้ว</span>
+                </td>
+              </tr>
+              <tr>
+                <td>น้ำเปล่า</td>
+                <td class="text-end">15</td>
+                <td class="text-end">2</td>
+                <td class="text-end">30</td>
+                <td>
+                  <span class="badge text-bg-success">เสิร์ฟแล้ว</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-xl-4">
+      <div class="card">
+        <div class="card-header bg-white fw-semibold">รับชำระเงิน</div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between mb-2">
+            <span>ยอดรวม</span>
+            <span>400 บาท</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span>ส่วนลด</span>
+            <span>0 บาท</span>
+          </div>
+          <div class="d-flex justify-content-between mb-2">
+            <span>ค่าบริการ</span>
+            <span>40 บาท</span>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <span>ภาษี</span>
+            <span>31 บาท</span>
+          </div>
+          <div class="d-flex justify-content-between fw-semibold fs-4 mb-4">
+            <span>ยอดสุทธิ</span>
+            <span>471 บาท</span>
+          </div>
+          <form action="/cashier/bill-summary" method="get">
+            <div class="mb-3">
+              <label class="form-label" for="method">วิธีชำระเงิน</label>
+              <select class="form-select" id="method">
+                <option>เงินสด</option>
+                <option>โอน</option>
+                <option>บัตร</option>
+                <option>QR Payment</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="receive">จำนวนเงินที่รับ</label>
+              <input class="form-control" type="number" id="receive" value="500">
+            </div>
+            <div class="mb-4">
+              <label class="form-label" for="change">เงินทอน</label>
+              <input class="form-control" type="number" id="change" value="29">
+            </div>
+            <button class="btn btn-success w-100" type="submit">บันทึกการชำระเงิน</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
