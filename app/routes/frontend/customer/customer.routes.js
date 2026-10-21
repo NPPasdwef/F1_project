@@ -1,6 +1,7 @@
 const express = require("express")
 const router = express.Router()
 const path = require("path")
+const { styleText } = require("util")
 const { Script } = require("vm")
 
 router.get('/', (req, res) => {
@@ -19,6 +20,13 @@ router.get('/cart', (req, res) => {
 })
 router.get('/checkout', (req, res) => {
     res.render(path.join(__dirname, '../../../../views/page/customer/checkout.ejs'), {
+        layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
+        styles: [''],
+        scripts: ['']
+    })
+})
+router.get('/history', (req, res) => {
+    res.render(path.join(__dirname, '../../../../views/page/customer/history.ejs'), {
         layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
         styles: [''],
         scripts: ['']
