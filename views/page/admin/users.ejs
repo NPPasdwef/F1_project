@@ -1,0 +1,117 @@
+﻿<main class="container-fluid py-4">
+  <h1 class="h3 mb-4">จัดการผู้ใช้และบทบาท</h1>
+  <div class="row g-4">
+    <div class="col-12 col-xl-4">
+      <div class="card">
+        <div class="card-header bg-white fw-semibold">เพิ่มผู้ใช้</div>
+        <div class="card-body">
+          <form action="#" method="post">
+            <div class="mb-3">
+              <label class="form-label" for="username">ชื่อผู้ใช้</label>
+              <input class="form-control" id="username" placeholder="เช่น staff04">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="fullName">ชื่อจริง</label>
+              <input class="form-control" id="fullName" placeholder="ชื่อ-นามสกุล">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="role">บทบาท</label>
+              <select class="form-select" id="role">
+                <option>staff</option>
+                <option>kitchen</option>
+                <option>cashier</option>
+                <option>manager</option>
+                <option>admin</option>
+              </select>
+            </div>
+            <div class="mb-4">
+              <label class="form-label" for="status">สถานะ</label>
+              <select class="form-select" id="status">
+                <option>ใช้งาน</option>
+                <option>ปิดใช้งาน</option>
+              </select>
+            </div>
+            <button class="btn btn-primary w-100" type="submit">บันทึกผู้ใช้</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-xl-8">
+      <div class="card">
+        <div class="card-header bg-white fw-semibold">รายการผู้ใช้</div>
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>ชื่อผู้ใช้</th>
+                <th>ชื่อ</th>
+                <th>บทบาท</th>
+                <th>เข้าใช้งานล่าสุด</th>
+                <th>สถานะ</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>admin</td>
+                <td>ผู้ดูแลร้าน</td>
+                <td>
+                  <span class="badge text-bg-dark">admin</span>
+                </td>
+                <td>05/05/2026 18:10</td>
+                <td>
+                  <span class="badge text-bg-success">ใช้งาน</span>
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+                </td>
+              </tr>
+              <tr>
+                <td>staff01</td>
+                <td>พนักงานหน้าร้าน</td>
+                <td>
+                  <span class="badge text-bg-primary">staff</span>
+                </td>
+                <td>05/05/2026 18:00</td>
+                <td>
+                  <span class="badge text-bg-success">ใช้งาน</span>
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+                </td>
+              </tr>
+              <tr>
+                <td>kitchen01</td>
+                <td>ครัวกลาง</td>
+                <td>
+                  <span class="badge text-bg-warning">kitchen</span>
+                </td>
+                <td>05/05/2026 17:55</td>
+                <td>
+                  <span class="badge text-bg-success">ใช้งาน</span>
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+                </td>
+              </tr>
+              <tr>
+                <td>cashier01</td>
+                <td>แคชเชียร์</td>
+                <td>
+                  <span class="badge text-bg-info">cashier</span>
+                </td>
+                <td>05/05/2026 17:50</td>
+                <td>
+                  <span class="badge text-bg-success">ใช้งาน</span>
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

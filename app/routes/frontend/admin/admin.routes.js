@@ -66,5 +66,11 @@ router.get('/restaurant-settings', (req, res) => {
         scripts: ['']
     })
 })
-
+router.get('/users', (req, res) => {
+    res.render(path.join(__dirname, '../../../../views/page/admin/users.ejs'), {
+        layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
+        styles: [''],
+        scripts: ['']
+    })
+})
 module.exports = router
