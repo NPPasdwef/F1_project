@@ -3,6 +3,7 @@ const router = express.Router()
 const path = require("path")
 const { styleText } = require("util")
 const { Script } = require("vm")
+const { route } = require("./customer.routes")
 
 router.get('/', (req, res) => {
     res.render(path.join(__dirname, '../../../../views/page/customer/index.ejs'), {
@@ -34,6 +35,13 @@ router.get('/history', (req, res) => {
 })
 router.get('/menu-detail', (req, res) => {
     res.render(path.join(__dirname, '../../../../views/page/customer/menu-detail.ejs'), {
+        layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
+        styles: [''],
+        scripts: ['']
+    })
+})
+router.get('/order-status', (req, res) => {
+    res.render(path.join(__dirname, '../../../../views/page/customer/order-status.ejs'), {
         layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
         styles: [''],
         scripts: ['']
