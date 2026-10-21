@@ -1,0 +1,74 @@
+﻿<main class="container py-4">
+  <h1 class="h3 mb-4">จัดการข้อมูลร้าน</h1>
+  <div class="card">
+    <div class="card-body">
+      <form action="#" method="post">
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="shopName">ชื่อร้าน</label>
+            <input class="form-control" id="shopName" value="ครัวบ้านดี">
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="phone">เบอร์โทร</label>
+            <input class="form-control" id="phone" value="02-555-0101">
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="openTime">เวลาเปิดปิด</label>
+            <input class="form-control" id="openTime" value="10:00 - 22:00">
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="taxId">เลขประจำตัวผู้เสียภาษี</label>
+            <input class="form-control" id="taxId" value="0105559999999">
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="address">ที่อยู่</label>
+            <textarea class="form-control" id="address" rows="3">
+99 ถนนสุขุมวิท กรุงเทพฯ</textarea>
+          </div>
+          <div class="col-12 col-md-4">
+            <label class="form-label" for="service">ค่าบริการ (%)</label>
+            <input class="form-control" type="number" id="service" value="10">
+          </div>
+          <div class="col-12 col-md-4">
+            <label class="form-label" for="tax">ภาษี (%)</label>
+            <input class="form-control" type="number" id="tax" value="7">
+          </div>
+          <div class="col-12 col-md-4">
+            <label class="form-label" for="orderPattern">รูปแบบเลขออเดอร์</label>
+            <input class="form-control" id="orderPattern" value="ORD-YYYYMMDD-###">
+          </div>
+          <div class="col-12">
+            <label class="form-label">วิธีชำระเงินที่รองรับ</label>
+            <div class="row g-2">
+              <div class="col-6 col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="cash" checked>
+                  <label class="form-check-label" for="cash">เงินสด</label>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="transfer" checked>
+                  <label class="form-check-label" for="transfer">โอน</label>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="card" checked>
+                  <label class="form-check-label" for="card">บัตร</label>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="qr" checked>
+                  <label class="form-check-label" for="qr">QR Payment</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary mt-4" type="submit">บันทึกข้อมูลร้าน</button>
+      </form>
+    </div>
+  </div>
+</main>

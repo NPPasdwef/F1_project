@@ -59,4 +59,12 @@ router.get('/reports', (req, res) => {
         scripts: ['']
     })
 })
+router.get('/restaurant-settings', (req, res) => {
+    res.render(path.join(__dirname, '../../../../views/page/admin/restaurant-settings.ejs'), {
+        layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
+        styles: [''],
+        scripts: ['']
+    })
+})
+
 module.exports = router
