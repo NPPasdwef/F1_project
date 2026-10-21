@@ -1,0 +1,143 @@
+﻿<main class="container py-4">
+  <div class="mb-4">
+    <a class="btn btn-outline-primary" href="/customer/">
+      <i class="fa-solid fa-arrow-left me-1"></i>กลับไปหน้าเมนู
+    </a>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-12 col-lg-7">
+      <div class="card shadow-sm overflow-hidden">
+        <div class="ratio ratio-4x3">
+          <img class="w-100 h-100 object-fit-cover" src="https://images.unsplash.com/photo-1707897634981-39bcfe435268?auto=format&fit=crop&fm=jpg&q=70&w=1200" alt="ข้าวกะเพราไก่ไข่ดาว">
+        </div>
+        <div class="card-body p-4">
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge text-bg-success">พร้อมขาย</span>
+            <span class="badge text-bg-light text-secondary border">
+              <i class="fa-solid fa-bowl-rice me-1"></i>อาหารจานเดียว
+            </span>
+            <span class="badge text-bg-warning">
+              <i class="fa-solid fa-star me-1"></i>ขายดี
+            </span>
+          </div>
+          <h1 class="h2 mb-3">ข้าวกะเพราไก่ไข่ดาว</h1>
+          <p class="text-body-secondary">ข้าวหอมมะลิร้อน ๆ ราดผัดกะเพราไก่สับหอมใบกะเพรา ผัดไฟแรงให้กลิ่นกระทะชัด เสิร์ฟพร้อมไข่ดาวกรอบนอกนุ่มใน และพริกน้ำปลาสูตรครัวบ้านดี</p>
+
+          <div class="row g-3 my-3">
+            <div class="col-6 col-md-3">
+              <div class="border rounded bg-light p-3 h-100">
+                <div class="fw-semibold">85 บาท</div>
+                <div class="small text-body-secondary">ราคาเริ่มต้น</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="border rounded bg-light p-3 h-100">
+                <div class="fw-semibold">10-15 นาที</div>
+                <div class="small text-body-secondary">เวลาปรุง</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="border rounded bg-light p-3 h-100">
+                <div class="fw-semibold">เผ็ดได้</div>
+                <div class="small text-body-secondary">ปรับรสชาติ</div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="border rounded bg-light p-3 h-100">
+                <div class="fw-semibold">1 ที่</div>
+                <div class="small text-body-secondary">อิ่มพอดี</div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="h5 mt-4">รายละเอียดเมนู</h2>
+          <dl class="row mb-0">
+            <dt class="col-sm-4">ส่วนประกอบหลัก</dt>
+            <dd class="col-sm-8">ไก่สับ ใบกะเพรา พริกสด กระเทียม ไข่ดาว และข้าวหอมมะลิ</dd>
+            <dt class="col-sm-4">เหมาะสำหรับ</dt>
+            <dd class="col-sm-8">มื้อกลางวัน มื้อเย็น หรือสั่งกลับบ้านแบบรวดเร็ว</dd>
+            <dt class="col-sm-4">หมายเหตุ</dt>
+            <dd class="col-sm-8">แจ้งไม่ใส่พริก เพิ่มไข่ดาว หรือเพิ่มข้าวได้ก่อนเพิ่มลงตะกร้า</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-5">
+      <div class="card shadow-sm">
+        <div class="card-header bg-white">
+          <h2 class="h5 mb-0">ตัวเลือกและจำนวน</h2>
+        </div>
+        <div class="card-body">
+          <form action="/customer/cart" method="get">
+            <div class="mb-3">
+              <label class="form-label" for="spicy">ระดับความเผ็ด</label>
+              <select class="form-select" id="spicy" name="spicy">
+                <option>ไม่เผ็ด</option>
+                <option>เผ็ดน้อย</option>
+                <option selected>เผ็ดกลาง</option>
+                <option>เผ็ดมาก</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="size">ขนาด</label>
+              <select class="form-select" id="size" name="size">
+                <option>ปกติ 85 บาท</option>
+                <option>พิเศษ +15 บาท</option>
+              </select>
+            </div>
+            <fieldset class="mb-3">
+              <legend class="form-label fs-6">ท็อปปิง</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="egg" name="topping" checked>
+                <label class="form-check-label" for="egg">ไข่ดาว +10 บาท</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rice" name="topping">
+                <label class="form-check-label" for="rice">เพิ่มข้าว +10 บาท</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="crispy-egg" name="topping">
+                <label class="form-check-label" for="crispy-egg">ไข่เจียวกรอบ +15 บาท</label>
+              </div>
+            </fieldset>
+            <div class="mb-3">
+              <label class="form-label" for="qty">จำนวน</label>
+              <input class="form-control" type="number" id="qty" name="qty" min="1" value="1">
+            </div>
+            <div class="mb-4">
+              <label class="form-label" for="note">หมายเหตุถึงครัว</label>
+              <textarea class="form-control" id="note" name="note" rows="3" placeholder="เช่น ไม่ใส่ถั่วฝักยาว ขอไข่ดาวสุก"></textarea>
+            </div>
+            <div class="border rounded bg-light p-3 mb-3">
+              <div class="d-flex justify-content-between mb-2">
+                <span>ราคาเริ่มต้น</span>
+                <span>85 บาท</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>ไข่ดาว</span>
+                <span>+10 บาท</span>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-between align-items-center">
+                <span>ยอดรายการ</span>
+                <strong class="fs-5">95 บาท</strong>
+              </div>
+            </div>
+            <button class="btn btn-primary w-100" type="submit">
+              <i class="fa-solid fa-cart-plus me-1"></i>เพิ่มลงตะกร้า
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="card mt-4">
+        <div class="card-body">
+          <h2 class="h5"><i class="fa-solid fa-circle-info me-2 text-primary"></i>ก่อนสั่ง</h2>
+          <p class="text-body-secondary mb-0">หากมีอาการแพ้อาหาร กรุณาระบุในช่องหมายเหตุ หรือแจ้งพนักงานหน้าร้านก่อนยืนยันออเดอร์</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

@@ -32,4 +32,11 @@ router.get('/history', (req, res) => {
         scripts: ['']
     })
 })
+router.get('/menu-detail', (req, res) => {
+    res.render(path.join(__dirname, '../../../../views/page/customer/menu-detail.ejs'), {
+        layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
+        styles: [''],
+        scripts: ['']
+    })
+})
 module.exports = router
