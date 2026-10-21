@@ -1,0 +1,103 @@
+﻿<!doctype html>
+<html lang="th">
+<main class="container-fluid py-4">
+  <h1 class="h3 mb-4">จัดการโปรโมชั่นและส่วนลด</h1>
+  <div class="row g-4">
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-header bg-white fw-semibold">สร้างโปรโมชั่น</div>
+        <div class="card-body">
+          <form action="#" method="post">
+            <div class="mb-3">
+              <label class="form-label" for="promoName">ชื่อโปรโมชั่น</label>
+              <input class="form-control" id="promoName" value="ลด 10% เมื่อครบ 500">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="type">ประเภทส่วนลด</label>
+              <select class="form-select" id="type">
+                <option>เปอร์เซ็นต์</option>
+                <option>จำนวนเงิน</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="value">มูลค่าส่วนลด</label>
+              <input class="form-control" type="number" id="value" value="10">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="condition">เงื่อนไข</label>
+              <textarea class="form-control" id="condition" rows="3">
+ยอดขั้นต่ำ 500 บาท ใช้ได้ทุกประเภทออเดอร์</textarea>
+            </div>
+            <div class="row g-3">
+              <div class="col-6">
+                <label class="form-label" for="start">เริ่ม</label>
+                <input class="form-control" type="date" id="start" value="2026-05-01">
+              </div>
+              <div class="col-6">
+                <label class="form-label" for="end">สิ้นสุด</label>
+                <input class="form-control" type="date" id="end" value="2026-05-31">
+              </div>
+            </div>
+            <button class="btn btn-primary w-100 mt-4" type="submit">บันทึกโปรโมชั่น</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-8">
+      <div class="card">
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>โปรโมชั่น</th>
+                <th>ประเภท</th>
+                <th>เงื่อนไข</th>
+                <th>ช่วงเวลา</th>
+                <th>สถานะ</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ลด 10% เมื่อครบ 500</td>
+                <td>เปอร์เซ็นต์</td>
+                <td>ยอดขั้นต่ำ 500</td>
+                <td>01/05 - 31/05</td>
+                <td>
+                  <span class="badge text-bg-success">ใช้งาน</span>
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+                </td>
+              </tr>
+              <tr>
+                <td>เครื่องดื่มลด 20 บาท</td>
+                <td>จำนวนเงิน</td>
+                <td>เฉพาะเครื่องดื่ม</td>
+                <td>ทุกวันศุกร์</td>
+                <td>
+                  <span class="badge text-bg-success">ใช้งาน</span>
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+                </td>
+              </tr>
+              <tr>
+                <td>ส่วนลดผู้จัดการ</td>
+                <td>จำนวนเงิน</td>
+                <td>ต้องใช้สิทธิ์ manager</td>
+                <td>ไม่จำกัด</td>
+                <td>
+                  <span class="badge text-bg-warning">จำกัดสิทธิ์</span>
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

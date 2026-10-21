@@ -1,6 +1,7 @@
 const express = require("express")
 const router = express.Router()
 const path = require("path")
+const { styleText } = require("util")
 
 router.get('/', (req, res) => {
     res.render(path.join(__dirname, '../../../../views/page/admin/index.ejs'), {
@@ -39,6 +40,13 @@ router.get('/menu', (req, res) => {
 })
 router.get('/orders', (req, res) => {
     res.render(path.join(__dirname, '../../../../views/page/admin/orders.ejs'), {
+        layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
+        styles: [''],
+        scripts: ['']
+    })
+})
+router.get('/promotions', (req, res) => {
+    res.render(path.join(__dirname, '../../../../views/page/admin/promotions.ejs'), {
         layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
         styles: [''],
         scripts: ['']
