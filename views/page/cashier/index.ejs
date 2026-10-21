@@ -1,0 +1,92 @@
+﻿  <main class="container-fluid py-4">
+    <div class="mb-4">
+      <h1 class="h3 mb-1">ค้นหาออเดอร์เพื่อชำระเงิน</h1>
+      <p class="text-body-secondary mb-0">ค้นหาจากเลขที่ออเดอร์ โต๊ะ ลูกค้า ประเภทการสั่ง และสถานะ</p>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <form class="row g-3" action="#" method="get">
+          <div class="col-12 col-md-3">
+            <label class="form-label" for="orderNo">เลขที่ออเดอร์</label>
+            <input class="form-control" id="orderNo" placeholder="ORD-...">
+          </div>
+          <div class="col-12 col-md-2">
+            <label class="form-label" for="tableNo">โต๊ะ</label>
+            <input class="form-control" id="tableNo" placeholder="A2">
+          </div>
+          <div class="col-12 col-md-3">
+            <label class="form-label" for="customer">ลูกค้า</label>
+            <input class="form-control" id="customer" placeholder="ชื่อหรือเบอร์โทร">
+          </div>
+          <div class="col-12 col-md-2">
+            <label class="form-label" for="status">สถานะ</label>
+            <select class="form-select" id="status">
+              <option>รอชำระ</option>
+              <option>กำลังปรุง</option>
+              <option>พร้อมเสิร์ฟ</option>
+              <option>ปิดบิลแล้ว</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-2 d-flex align-items-end">
+            <button class="btn btn-primary w-100" type="submit">ค้นหา</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>ออเดอร์</th>
+              <th>โต๊ะ/ประเภท</th>
+              <th>ลูกค้า</th>
+              <th>สถานะ</th>
+              <th class="text-end">ยอดสุทธิ</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ORD-20260505-018</td>
+              <td>A2</td>
+              <td>คุณมะลิ</td>
+              <td>
+                <span class="badge text-bg-info">รอชำระ</span>
+              </td>
+              <td class="text-end">471</td>
+              <td>
+                <a class="btn btn-sm btn-primary" href="/cashier/payment">ชำระเงิน</a>
+              </td>
+            </tr>
+            <tr>
+              <td>ORD-20260505-016</td>
+              <td>กลับบ้าน</td>
+              <td>คุณนนท์</td>
+              <td>
+                <span class="badge text-bg-info">รอชำระ</span>
+              </td>
+              <td class="text-end">250</td>
+              <td>
+                <a class="btn btn-sm btn-primary" href="/cashier/payment">ชำระเงิน</a>
+              </td>
+            </tr>
+            <tr>
+              <td>ORD-20260505-014</td>
+              <td>เดลิเวอรี</td>
+              <td>คุณแอน</td>
+              <td>
+                <span class="badge text-bg-success">ปิดบิลแล้ว</span>
+              </td>
+              <td class="text-end">530</td>
+              <td>
+                <a class="btn btn-sm btn-outline-secondary" href="/cashier/receipt">ใบเสร็จ</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
