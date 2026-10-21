@@ -13,4 +13,5 @@ router.get('/', (req, res) => {
 router.use('/customer', require('./customer/customer.routes.js'))
 router.use('/admin', require('./admin/admin.routes.js'))
 router.use('/auth', require('./auth/auth.routes.js'))
+router.use('/cashier', require('./cashier/cashier.routes.js'))
 module.exports = router;
