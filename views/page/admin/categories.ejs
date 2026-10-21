@@ -1,0 +1,93 @@
+﻿<main class="container-fluid py-4">
+  <h1 class="h3 mb-4">จัดการหมวดหมู่เมนู</h1>
+  <div class="row g-4">
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-header bg-white fw-semibold">เพิ่มหมวดหมู่</div>
+        <div class="card-body">
+          <form action="#" method="post">
+            <div class="mb-3">
+              <label class="form-label" for="name">ชื่อหมวดหมู่</label>
+              <input class="form-control" id="name" placeholder="เช่น อาหารจานเดียว">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="sort">ลำดับแสดงผล</label>
+              <input class="form-control" type="number" id="sort" value="1">
+            </div>
+            <div class="mb-4">
+              <label class="form-label" for="status">สถานะ</label>
+              <select class="form-select" id="status">
+                <option>ใช้งาน</option>
+                <option>ปิดใช้งาน</option>
+              </select>
+            </div>
+            <button class="btn btn-primary w-100" type="submit">บันทึก</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-8">
+      <div class="card">
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>ลำดับ</th>
+                <th>หมวดหมู่</th>
+                <th>จำนวนเมนู</th>
+                <th>สถานะ</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>อาหารจานเดียว</td>
+                <td>18</td>
+                <td>
+                  <span class="badge text-bg-success">ใช้งาน</span>
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>กับข้าว</td>
+                <td>12</td>
+                <td>
+                  <span class="badge text-bg-success">ใช้งาน</span>
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>เครื่องดื่ม</td>
+                <td>16</td>
+                <td>
+                  <span class="badge text-bg-success">ใช้งาน</span>
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>ของหวาน</td>
+                <td>0</td>
+                <td>
+                  <span class="badge text-bg-secondary">ปิดใช้งาน</span>
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
