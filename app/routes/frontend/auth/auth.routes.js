@@ -9,6 +9,13 @@ router.get('/login', (req, res) => {
         scripts: ['']
     })
 })
+router.get('/register', (req, res) => {
+    res.render(path.join(__dirname, '../../../../views/page/auth/register.ejs'), {
+        layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
+        style: [''],
+        scripts: ['']
+    })
+})
 
 
 module.exports = router
