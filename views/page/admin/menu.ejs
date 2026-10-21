@@ -1,0 +1,839 @@
+﻿<main class="container-fluid py-4">
+  <div class="d-flex justify-content-between align-items-start mb-4">
+    <div>
+      <h1 class="h3 mb-1">จัดการเมนูอาหาร</h1>
+      <p class="text-body-secondary mb-0">เพิ่ม แก้ไข จัดเรียง และจัดการหมวดหมู่เมนูอาหาร</p>
+    </div>
+    <a class="btn btn-primary" href="#">
+      <i class="fa-solid fa-plus me-1"></i>เพิ่มเมนูใหม่
+    </a>
+  </div>
+
+  <div class="row g-3 mb-4">
+    <div class="col-12 col-md-4">
+      <input class="form-control" type="search" placeholder="ค้นหาชื่อเมนู หรือรหัส">
+    </div>
+    <div class="col-12 col-md-3">
+      <select class="form-select" aria-label="หมวดหมู่">
+        <option>ทั้งหมด</option>
+        <option>จานเดียว</option>
+        <option>กับข้าว</option>
+        <option>ต้ม</option>
+        <option>ผัด</option>
+        <option>ทอด</option>
+        <option>เครื่องดื่ม</option>
+        <option>ของหวาน</option>
+      </select>
+    </div>
+    <div class="col-12 col-md-5 d-flex gap-3">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="bestSeller">
+        <label class="form-check-label" for="bestSeller">แสดงเฉพาะสินค้าขายดี</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="outOfStock">
+        <label class="form-check-label" for="outOfStock">แสดงรายการหมด</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-3">
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="กะเพราไก่ไข่ดาว" src="https://via.placeholder.com/400x240?text=กะเพราไก่ไข่ดาว">
+        <div class="card-body">
+          <h2 class="h5 card-title">กะเพราไก่ไข่ดาว</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">85 บาท</p>
+          <p class="card-text">ไข่ดาวกรอบนอกนุ่มใน ผัดกะเพราไก่สับสไตล์ร้านครัวบ้านดี</p>
+          <p class="card-text">
+            <span class="badge text-bg-warning">ขายดี</span>
+          </p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวผัดปู" src="https://via.placeholder.com/400x240?text=ข้าวผัดปู">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวผัดปู</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">120 บาท</p>
+          <p class="card-text">ข้าวผัดปูเนื้อแน่น ใช้ไข่ฟูกรอบนอกนุ่มใน</p>
+          <p class="card-text">
+            <span class="badge text-bg-warning">ขายดี</span>
+          </p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหมูทอดกระเทียม" src="https://via.placeholder.com/400x240?text=ข้าวหมูทอดกระเทียม">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหมูทอดกระเทียม</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">95 บาท</p>
+          <p class="card-text">หมูทอดกระเทียมกรอบ ราดข้าวสวยร้อนๆ</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวคลุกกะปิ" src="https://via.placeholder.com/400x240?text=ข้าวคลุกกะปิ">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวคลุกกะปิ</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">75 บาท</p>
+          <p class="card-text">ข้าวคลุกกะปิสูตรโบราณ เสิร์ฟพร้อมผักสดและปลาทู</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวมันไก่ต้ม" src="https://via.placeholder.com/400x240?text=ข้าวมันไก่ต้ม">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวมันไก่ต้ม</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">80 บาท</p>
+          <p class="card-text">ข้าวมันไก่ต้มน้ำจิ้มรสเด็ด ไก่เนื้อนุ่ม</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าเป็ด" src="https://via.placeholder.com/400x240?text=ข้าวหน้าเป็ด">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าเป็ด</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">130 บาท</p>
+          <p class="card-text">เป็ดย่างหนังกรอบ ราดน้ำราดรสเข้มข้น</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวขาหมู" src="https://via.placeholder.com/400x240?text=ข้าวขาหมู">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวขาหมู</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">110 บาท</p>
+          <p class="card-text">ขาหมูตุ๋นจนเปื่อย น้ำราดหอมกรุ่น</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าหมูแดง" src="https://via.placeholder.com/400x240?text=ข้าวหน้าหมูแดง">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าหมูแดง</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">100 บาท</p>
+          <p class="card-text">หมูแดงหมักสูตรพิเศษ ราดน้ำราดหวานนวล</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าเนื้อ" src="https://via.placeholder.com/400x240?text=ข้าวหน้าเนื้อ">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าเนื้อ</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">140 บาท</p>
+          <p class="card-text">เนื้อวัวชิ้นโต ย่างบนเตาถ่าน ราดซอสสูตรเฉพาะ</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวซอย" src="https://via.placeholder.com/400x240?text=ข้าวซอย">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวซอย</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">90 บาท</p>
+          <p class="card-text">ข้าวซอยเส้นเหนียวนุ่ม น้ำซุปกะทิเข้มข้น</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวผัดอเมริกัน" src="https://via.placeholder.com/400x240?text=ข้าวผัดอเมริกัน">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวผัดอเมริกัน</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">95 บาท</p>
+          <p class="card-text">ข้าวผัดอเมริกันรสจัด ใส่ไข่ ไส้กรอก และผักรวม</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ผัดไทยกุ้งสด" src="https://via.placeholder.com/400x240?text=ผัดไทยกุ้งสด">
+        <div class="card-body">
+          <h2 class="h5 card-title">ผัดไทยกุ้งสด</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">100 บาท</p>
+          <p class="card-text">ผัดไทยเส้นจันท์ กุ้งสดตัวโต โรยถั่วลิสงคั่ว</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="หมี่กรอบราดหน้า" src="https://via.placeholder.com/400x240?text=หมี่กรอบราดหน้า">
+        <div class="card-body">
+          <h2 class="h5 card-title">หมี่กรอบราดหน้า</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">95 บาท</p>
+          <p class="card-text">หมี่กรอบทอดกรอบนอก ราดด้วยหน้าผัดรวมมิตร</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="สุกี้แห้งทะเล" src="https://via.placeholder.com/400x240?text=สุกี้แห้งทะเล">
+        <div class="card-body">
+          <h2 class="h5 card-title">สุกี้แห้งทะเล</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">120 บาท</p>
+          <p class="card-text">สุกี้แห้งทะเลรวม กุ้ง ปลาหมึก หอยเชลล์</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ก๋วยเตี๋ยวเรือ" src="https://via.placeholder.com/400x240?text=ก๋วยเตี๋ยวเรือ">
+        <div class="card-body">
+          <h2 class="h5 card-title">ก๋วยเตี๋ยวเรือ</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">80 บาท</p>
+          <p class="card-text">ก๋วยเตี๋ยวเรือน้ำตก เนื้อนุ่ม เลือกเส้นได้</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวต้มปลากระพง" src="https://via.placeholder.com/400x240?text=ข้าวต้มปลากระพง">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวต้มปลากระพง</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">120 บาท</p>
+          <p class="card-text">ข้าวต้มปลากระพงสด น้ำซุปใสหอมขิง</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหมูแดงกรอบ" src="https://via.placeholder.com/400x240?text=ข้าวหมูแดงกรอบ">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหมูแดงกรอบ</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">100 บาท</p>
+          <p class="card-text">หมูแดงกรอบนอกนุ่มใน ราดน้ำราดหวาน</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวราดหน้าหมู" src="https://via.placeholder.com/400x240?text=ข้าวราดหน้าหมู">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวราดหน้าหมู</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">85 บาท</p>
+          <p class="card-text">ราดหน้าหมูนุ่ม ผักรวมมิตร น้ำราดเข้มข้น</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหมูกรอบทอดน้ำปลา" src="https://via.placeholder.com/400x240?text=ข้าวหมูกรอบทอดน้ำปลา">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหมูกรอบทอดน้ำปลา</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">110 บาท</p>
+          <p class="card-text">หมูกรอบทอดน้ำปลา กรอบนอกนุ่มใน หอมกลิ่นกระเทียมเจียว</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวมันไก่ทอด" src="https://via.placeholder.com/400x240?text=ข้าวมันไก่ทอด">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวมันไก่ทอด</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">85 บาท</p>
+          <p class="card-text">ไก่ทอดกรอบนอกนุ่มใน เสิร์ฟพร้อมข้าวมันและน้ำจิ้ม</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าไก่เทอริยากิ" src="https://via.placeholder.com/400x240?text=ข้าวหน้าไก่เทอริยากิ">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าไก่เทอริยากิ</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">120 บาท</p>
+          <p class="card-text">ไก่ย่างซอสเทอริยากิ ราดบนข้าวสวยญี่ปุ่น</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าปลาแซลมอน" src="https://via.placeholder.com/400x240?text=ข้าวหน้าปลาแซลมอน">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าปลาแซลมอน</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">150 บาท</p>
+          <p class="card-text">ปลาแซลมอนย่างซีอิ๊ว ราดบนข้าวสวยญี่ปุ่น</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าหมูย่างเกาหลี" src="https://via.placeholder.com/400x240?text=ข้าวหน้าหมูย่างเกาหลี">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าหมูย่างเกาหลี</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">130 บาท</p>
+          <p class="card-text">หมูย่างซอสเกาหลี ราดบนข้าวสวยร้อนๆ</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหมูสไปซี่" src="https://via.placeholder.com/400x240?text=ข้าวหมูสไปซี่">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหมูสไปซี่</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">95 บาท</p>
+          <p class="card-text">หมูทอดสไปซี่รสจัด กรอบนอกนุ่มใน</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าปลาซาบะ" src="https://via.placeholder.com/400x240?text=ข้าวหน้าปลาซาบะ">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าปลาซาบะ</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">110 บาท</p>
+          <p class="card-text">ปลาซาบะย่างเกลือ ราดบนข้าวสวยญี่ปุ่น</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวไข่ข้น" src="https://via.placeholder.com/400x240?text=ข้าวไข่ข้น">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวไข่ข้น</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">80 บาท</p>
+          <p class="card-text">ไข่ข้นเนื้อนุ่ม ราดบนข้าวสวยร้อนๆ</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวผัดกระเทียม" src="https://via.placeholder.com/400x240?text=ข้าวผัดกระเทียม">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวผัดกระเทียม</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">85 บาท</p>
+          <p class="card-text">ข้าวผัดกระเทียมหอมๆ ใส่ไข่และผักรวม</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวผัดพริกแกง" src="https://via.placeholder.com/400x240?text=ข้าวผัดพริกแกง">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวผัดพริกแกง</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">90 บาท</p>
+          <p class="card-text">ข้าวผัดพริกแกงรสจัด ใส่หมูและใบกะเพรา</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวผัดคะน้าหมูกรอบ" src="https://via.placeholder.com/400x240?text=ข้าวผัดคะน้าหมูกรอบ">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวผัดคะน้าหมูกรอบ</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">100 บาท</p>
+          <p class="card-text">คะน้าผัดน้ำมันหอย หมูกรอบกรอบนอกนุ่มใน</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าหมูชาชู" src="https://via.placeholder.com/400x240?text=ข้าวหน้าหมูชาชู">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าหมูชาชู</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">140 บาท</p>
+          <p class="card-text">หมูชาชูสไลซ์บาง ราดซอสราเมนรสเข้มข้น</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวผัดปูผงกะหรี่" src="https://via.placeholder.com/400x240?text=ข้าวผัดปูผงกะหรี่">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวผัดปูผงกะหรี่</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">130 บาท</p>
+          <p class="card-text">ข้าวผัดปูผงกะหรี่ รสกลมกล่อม หอมเครื่องเทศ</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าไก่คาราเกะ" src="https://via.placeholder.com/400x240?text=ข้าวหน้าไก่คาราเกะ">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าไก่คาราเกะ</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">110 บาท</p>
+          <p class="card-text">ไก่คาราเกะกรอบนอกนุ่มใน ราดมายองเนส</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าหมูย่างไข่ onsen" src="https://via.placeholder.com/400x240?text=ข้าวหน้าหมูย่างไข่+onsen">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าหมูย่างไข่ onsen</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">130 บาท</p>
+          <p class="card-text">หมูย่างซอสญี่ปุ่น ไข่ออนเซ็นเนื้อนุ่มละลายในปาก</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวผัดกุ้ง" src="https://via.placeholder.com/400x240?text=ข้าวผัดกุ้ง">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวผัดกุ้ง</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">120 บาท</p>
+          <p class="card-text">ข้าวผัดกุ้งตัวโต รสชาติกลมกล่อม</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวผัดสับปะรด" src="https://via.placeholder.com/400x240?text=ข้าวผัดสับปะรด">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวผัดสับปะรด</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">100 บาท</p>
+          <p class="card-text">ข้าวผัดใส่สับปะรดหวานหอม รสชาติกลมกล่อม</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าเนื้อวากิว" src="https://via.placeholder.com/400x240?text=ข้าวหน้าเนื้อวากิว">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าเนื้อวากิว</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">250 บาท</p>
+          <p class="card-text">เนื้อวากิวสไลซ์บาง ย่างบนเตาถ่าน ราดซอสสูตรเฉพาะ</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าปลาไหล" src="https://via.placeholder.com/400x240?text=ข้าวหน้าปลาไหล">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าปลาไหล</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">180 บาท</p>
+          <p class="card-text">ปลาไหลย่างซีอิ๊ว ราดบนข้าวสวยญี่ปุ่น</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าปลาดิบรวม" src="https://via.placeholder.com/400x240?text=ข้าวหน้าปลาดิบรวม">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าปลาดิบรวม</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">200 บาท</p>
+          <p class="card-text">ปลาดิบรวมสดๆ ราดบนข้าวสวยญี่ปุ่น โรยไข่กุ้ง</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหมูทอดทงคัตสึ" src="https://via.placeholder.com/400x240?text=ข้าวหมูทอดทงคัตสึ">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหมูทอดทงคัตสึ</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">140 บาท</p>
+          <p class="card-text">หมูทอดทงคัตสึกรอบนอกนุ่มใน ราดซอสโทนกัตสึ</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าปลาซาบะย่างซีอิ๊ว" src="https://via.placeholder.com/400x240?text=ข้าวหน้าปลาซาบะย่างซีอิ๊ว">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าปลาซาบะย่างซีอิ๊ว</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">120 บาท</p>
+          <p class="card-text">ปลาซาบะย่างซีอิ๊ว ราดบนข้าวสวยญี่ปุ่น</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าไก่ย่างซอสเทอริยากิ" src="https://via.placeholder.com/400x240?text=ข้าวหน้าไก่ย่างซอสเทอริยากิ">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าไก่ย่างซอสเทอริยากิ</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">110 บาท</p>
+          <p class="card-text">ไก่ย่างซอสเทอริยากิ ราดบนข้าวสวยญี่ปุ่น</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าหมูย่างซอสมิโสะ" src="https://via.placeholder.com/400x240?text=ข้าวหน้าหมูย่างซอสมิโสะ">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าหมูย่างซอสมิโสะ</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">130 บาท</p>
+          <p class="card-text">หมูย่างซอสมิโสะ ราดบนข้าวสวยญี่ปุ่น</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าเนื้อย่างซอสพอนซึ" src="https://via.placeholder.com/400x240?text=ข้าวหน้าเนื้อย่างซอสพอนซึ">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าเนื้อย่างซอสพอนซึ</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">160 บาท</p>
+          <p class="card-text">เนื้อย่างซอสพอนซึ ราดบนข้าวสวยญี่ปุ่น</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าปลาแซลมอนย่างซีอิ๊ว" src="https://via.placeholder.com/400x240?text=ข้าวหน้าปลาแซลมอนย่างซีอิ๊ว">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าปลาแซลมอนย่างซีอิ๊ว</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">150 บาท</p>
+          <p class="card-text">ปลาแซลมอนย่างซีอิ๊ว ราดบนข้าวสวยญี่ปุ่น</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าหมูทอดทงคัตสึ" src="https://via.placeholder.com/400x240?text=ข้าวหน้าหมูทอดทงคัตสึ">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าหมูทอดทงคัตสึ</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">140 บาท</p>
+          <p class="card-text">หมูทอดทงคัตสึกรอบนอกนุ่มใน ราดซอสโทนกัตสึ</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าไก่ทอดคาราเกะ" src="https://via.placeholder.com/400x240?text=ข้าวหน้าไก่ทอดคาราเกะ">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าไก่ทอดคาราเกะ</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">110 บาท</p>
+          <p class="card-text">ไก่คาราเกะกรอบนอกนุ่มใน ราดมายองเนส</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าหมูชาชูราเมน" src="https://via.placeholder.com/400x240?text=ข้าวหน้าหมูชาชูราเมน">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าหมูชาชูราเมน</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">140 บาท</p>
+          <p class="card-text">หมูชาชูสไลซ์บาง ราดซอสราเมนรสเข้มข้น</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าปลาซาบะย่างเกลือ" src="https://via.placeholder.com/400x240?text=ข้าวหน้าปลาซาบะย่างเกลือ">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าปลาซาบะย่างเกลือ</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">110 บาท</p>
+          <p class="card-text">ปลาซาบะย่างเกลือ ราดบนข้าวสวยญี่ปุ่น</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าไข่ข้นปู" src="https://via.placeholder.com/400x240?text=ข้าวหน้าไข่ข้นปู">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าไข่ข้นปู</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">150 บาท</p>
+          <p class="card-text">ไข่ข้นปูเนื้อนุ่ม ราดบนข้าวสวยร้อนๆ</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้ากุ้งเทมปุระ" src="https://via.placeholder.com/400x240?text=ข้าวหน้ากุ้งเทมปุระ">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้ากุ้งเทมปุระ</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">140 บาท</p>
+          <p class="card-text">กุ้งเทมปุระกรอบนอกนุ่มใน ราดซอสสูตรเฉพาะ</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+      <div class="card h-100">
+        <img class="card-img-top" alt="ข้าวหน้าปลาหมึกย่าง" src="https://via.placeholder.com/400x240?text=ข้าวหน้าปลาหมึกย่าง">
+        <div class="card-body">
+          <h2 class="h5 card-title">ข้าวหน้าปลาหมึกย่าง</h2>
+          <span class="badge text-bg-primary">จานเดียว</span>
+          <p class="card-text text-body-secondary mt-2">130 บาท</p>
+          <p class="card-text">ปลาหมึกย่างซอสญี่ปุ่น ราดบนข้าวสวยร้อนๆ</p>
+        </div>
+        <div class="card-footer bg-white d-flex gap-2">
+          <button class="btn btn-sm btn-outline-primary">แก้ไข</button>
+          <button class="btn btn-sm btn-outline-secondary">ซ่อน</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="mt-4" aria-label="Pagination">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#">ก่อนหน้า</a>
+      </li>
+      <li class="page-item active" aria-current="page">
+        <a class="page-link" href="#">1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">3</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">4</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">5</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">ถัดไป</a>
+      </li>
+    </ul>
+  </nav>
+</main>
