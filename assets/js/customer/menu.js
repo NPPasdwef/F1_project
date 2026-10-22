@@ -24,12 +24,18 @@ fetch('/api/restaurant/menu').then(res => res.json()).then(data => {
                 clone.querySelector('[data-role="name"]').textContent = element.name
                 clone.querySelector('[data-role="description"]').textContent = element.description
                 clone.querySelector('[data-role="price"]').textContent = `ราคา ${element.price} บาท`
-
                 oneplate_container.appendChild(clone)
+                console.log("work")
             })
         }
         short("อาหารจานเดียว", "oneplate-container", "oneplate-list-template")
         short("กับข้าว", "kab-container", "kab-template")
+        short("เส้นและแกง", "noodle-curry-container", "noodle-curry-template")
+        short("ของทานเล่น", "eat-play-food-container", "eat-play-food-template")
+        short("เครื่องดื่ม", "drink-container", "drink-template")
+        short("ของหวาน", "sweet-container", "sweet-template")
+        short("ชุดเซ็ต", "set-container", "set-template")
+
     }
     else {
         console.log(data)
