@@ -4,7 +4,7 @@ fetch('/api/restaurant/menu').then(res => res.json()).then(data => {
         const template = document.getElementById("menu-list-template")
         data.data.list.forEach(element => {
             const clone = template.content.cloneNode(true)
-            document.querySelector('[data-role="images"]').src = element.image
+            clone.querySelector('[data-role="images"]').src = element.image
             container.appendChild(clone)
         });
     }
