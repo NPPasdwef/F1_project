@@ -170,145 +170,33 @@
         <h2 class="h4 mb-0"><i class="fa-solid fa-bowl-food me-2 text-primary"></i>กับข้าว</h2>
         <span class="badge text-bg-primary">6 เมนู</span>
       </div>
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1628430043175-0e8820df47c3?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=70&amp;w=900" alt="ต้มยำกุ้งน้ำข้น">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-bowl-food me-1"></i>กับข้าว
-                </span>
-                <span class="badge text-bg-success">ขายดี</span>
+      <div id="kab-container" class="row g-4">
+        <template id="kab-template">
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100 shadow-sm">
+              <div class="ratio ratio-4x3">
+                <img data-role="image" class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1628430043175-0e8820df47c3?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=70&amp;w=900" alt="ต้มยำกุ้งน้ำข้น">
               </div>
-              <h2 class="h5 mb-1">ต้มยำกุ้งน้ำข้น</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">หม้อไฟรสจัดจ้าน หอมสมุนไพรไทยสำหรับแบ่งกัน</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>180 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="แกงเขียวหวานไก่">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-bowl-food me-1"></i>กับข้าว
-                </span>
-                <span class="badge text-bg-primary">แนะนำ</span>
-              </div>
-              <h2 class="h5 mb-1">แกงเขียวหวานไก่</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">แกงกะทิเข้มข้น ใส่มะเขือและใบโหระพา</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>145 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+                  <span class="badge text-bg-light text-secondary border">
+                    <i class="fa-solid fa-bowl-food me-1"></i>
+                    <span data-role="category">กับข้าว</span>
+                  </span>
+                  <span data-role="tag" class="badge text-bg-success">ขายดี</span>
+                </div>
+                <h2 data-role="name" class="h5 mb-1">ต้มยำกุ้งน้ำข้น</h2>
+                <p data-role="description" class="text-body-secondary small flex-grow-1 mb-3">หม้อไฟรสจัดจ้าน หอมสมุนไพรไทยสำหรับแบ่งกัน</p>
+                <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
+                  <strong data-role="price">180 บาท</strong>
+                  <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
+                    <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="ผัดผักรวมกุ้ง">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-bowl-food me-1"></i>กับข้าว
-                </span>
-                <span class="badge text-bg-light text-secondary border">พร้อมขาย</span>
-              </div>
-              <h2 class="h5 mb-1">ผัดผักรวมกุ้ง</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">ผักสดหลายชนิดผัดไฟแรงกับกุ้งสด</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>130 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="หมูสามชั้นทอดน้ำปลา">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-bowl-food me-1"></i>กับข้าว
-                </span>
-                <span class="badge text-bg-success">ขายดี</span>
-              </div>
-              <h2 class="h5 mb-1">หมูสามชั้นทอดน้ำปลา</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">หมูสามชั้นทอดกรอบนอกนุ่มใน เสิร์ฟพร้อมน้ำจิ้มแจ่ว</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>150 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="ไข่เจียวหมูสับ">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-bowl-food me-1"></i>กับข้าว
-                </span>
-                <span class="badge text-bg-light text-secondary border">พร้อมขาย</span>
-              </div>
-              <h2 class="h5 mb-1">ไข่เจียวหมูสับ</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">ไข่เจียวฟูกรอบใส่หมูสับ กินง่ายทุกโต๊ะ</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>80 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="ปลากะพงทอดน้ำปลา">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-bowl-food me-1"></i>กับข้าว
-                </span>
-                <span class="badge text-bg-warning">พิเศษ</span>
-              </div>
-              <h2 class="h5 mb-1">ปลากะพงทอดน้ำปลา</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">ปลากะพงทอดกรอบ ราดน้ำปลาหอม เสิร์ฟพร้อมน้ำยำมะม่วง</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>320 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        </template>
       </div>
     </div>
     <div class="tab-pane fade" id="noodle-pane" role="tabpanel" aria-labelledby="noodle-tab" tabindex="0">
@@ -316,145 +204,33 @@
         <h2 class="h4 mb-0"><i class="fa-solid fa-plate-wheat me-2 text-primary"></i>เส้นและแกง</h2>
         <span class="badge text-bg-primary">6 เมนู</span>
       </div>
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="ผัดไทยกุ้งสด">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-plate-wheat me-1"></i>เส้นและแกง
-                </span>
-                <span class="badge text-bg-primary">แนะนำ</span>
+      <div id="noodle-curry-container" class="row g-4">
+        <template id="noodle-curry-template">
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100 shadow-sm">
+              <div class="ratio ratio-4x3">
+                <img data-role="image" class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="ผัดไทยกุ้งสด">
               </div>
-              <h2 class="h5 mb-1">ผัดไทยกุ้งสด</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">เส้นจันท์ผัดซอสผัดไทย กุ้งสด ถั่วงอก และมะนาว</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>120 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="ราดหน้าหมูหมัก">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-plate-wheat me-1"></i>เส้นและแกง
-                </span>
-                <span class="badge text-bg-light text-secondary border">พร้อมขาย</span>
-              </div>
-              <h2 class="h5 mb-1">ราดหน้าหมูหมัก</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">เส้นใหญ่ผัดหอมกระทะ ราดน้ำราดหน้าหมูหมักนุ่ม</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>95 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+                  <span class="badge text-bg-light text-secondary border">
+                    <i class="fa-solid fa-plate-wheat me-1"></i>
+                    <span data-role="category">เส้นและแกง</span>
+                  </span>
+                  <span data-role="tag" class="badge text-bg-primary">แนะนำ</span>
+                </div>
+                <h2 data-role="name" class="h5 mb-1">ผัดไทยกุ้งสด</h2>
+                <p data-role="description" class="text-body-secondary small flex-grow-1 mb-3">เส้นจันท์ผัดซอสผัดไทย กุ้งสด ถั่วงอก และมะนาว</p>
+                <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
+                  <strong data-role="price">120 บาท</strong>
+                  <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
+                    <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="สุกี้น้ำทะเล">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-plate-wheat me-1"></i>เส้นและแกง
-                </span>
-                <span class="badge text-bg-light text-secondary border">พร้อมขาย</span>
-              </div>
-              <h2 class="h5 mb-1">สุกี้น้ำทะเล</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">น้ำซุปร้อน ๆ พร้อมกุ้ง ปลาหมึก ผัก และน้ำจิ้มสุกี้</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>115 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="ก๋วยเตี๋ยวคั่วไก่">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-plate-wheat me-1"></i>เส้นและแกง
-                </span>
-                <span class="badge text-bg-success">ขายดี</span>
-              </div>
-              <h2 class="h5 mb-1">ก๋วยเตี๋ยวคั่วไก่</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">เส้นใหญ่คั่วไก่หอมกระทะ โรยพริกไทยและต้นหอม</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>90 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="ขนมจีนแกงเขียวหวาน">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-plate-wheat me-1"></i>เส้นและแกง
-                </span>
-                <span class="badge text-bg-light text-secondary border">พร้อมขาย</span>
-              </div>
-              <h2 class="h5 mb-1">ขนมจีนแกงเขียวหวาน</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">ขนมจีนเสิร์ฟกับแกงเขียวหวานไก่และผักสด</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>110 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="เส้นใหญ่ผัดซีอิ๊ว">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-plate-wheat me-1"></i>เส้นและแกง
-                </span>
-                <span class="badge text-bg-light text-secondary border">พร้อมขาย</span>
-              </div>
-              <h2 class="h5 mb-1">เส้นใหญ่ผัดซีอิ๊ว</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">เส้นใหญ่เหนียวนุ่ม ผัดซีอิ๊วกับหมูและคะน้า</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>89 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        </template>
       </div>
     </div>
     <div class="tab-pane fade" id="snack-pane" role="tabpanel" aria-labelledby="snack-tab" tabindex="0">

@@ -29,6 +29,7 @@ fetch('/api/restaurant/menu').then(res => res.json()).then(data => {
             })
         }
         short("อาหารจานเดียว", "oneplate-container", "oneplate-list-template")
+        short("กับข้าว", "kab-container", "kab-template")
     }
     else {
         console.log(data)
