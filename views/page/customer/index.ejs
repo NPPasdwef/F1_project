@@ -136,145 +136,33 @@
         <h2 class="h4 mb-0"><i class="fa-solid fa-bowl-rice me-2 text-primary"></i>อาหารจานเดียว</h2>
         <span class="badge text-bg-primary">6 เมนู</span>
       </div>
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1707897634981-39bcfe435268?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=70&amp;w=900" alt="ข้าวกะเพราไก่ไข่ดาว">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-bowl-rice me-1"></i>อาหารจานเดียว
-                </span>
-                <span class="badge text-bg-success">ขายดี</span>
+      <div id="oneplate-container" class="row g-4">
+        <template id="oneplate-list-template">
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card h-100 shadow-sm">
+              <div class="ratio ratio-4x3">
+                <img data-role="image" class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="ข้าวไก่ผัดเม็ดมะม่วง">
               </div>
-              <h2 class="h5 mb-1">ข้าวกะเพราไก่ไข่ดาว</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">ผัดกะเพราไก่สับหอมใบกะเพรา เสิร์ฟพร้อมไข่ดาวกรอบ</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>85 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="ข้าวผัดกุ้ง">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-bowl-rice me-1"></i>อาหารจานเดียว
-                </span>
-                <span class="badge text-bg-primary">แนะนำ</span>
-              </div>
-              <h2 class="h5 mb-1">ข้าวผัดกุ้ง</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">ข้าวหอมผัดไข่กับกุ้งสด หอมกระทะและผักสามสี</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>95 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
+              <div class="card-body d-flex flex-column">
+                <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+                  <span class="badge text-bg-light text-secondary border">
+                    <i class="fa-solid fa-bowl-rice me-1"></i>
+                    <span data-role="category">อาหารจานเดียว</span>
+                  </span>
+                  <span data-role="tag" class="badge text-bg-light text-secondary border">พร้อมขาย</span>
+                </div>
+                <h2 data-role="name" class="h5 mb-1">ข้าวไก่ผัดเม็ดมะม่วง</h2>
+                <p data-role="description" class="text-body-secondary small flex-grow-1 mb-3">ไก่ผัดซอสหวานเค็มกับเม็ดมะม่วงและพริกแห้ง</p>
+                <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
+                  <strong data-role="price">115 บาท</strong>
+                  <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
+                    <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="ข้าวหมูทอดกระเทียม">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-bowl-rice me-1"></i>อาหารจานเดียว
-                </span>
-                <span class="badge text-bg-light text-secondary border">พร้อมขาย</span>
-              </div>
-              <h2 class="h5 mb-1">ข้าวหมูทอดกระเทียม</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">หมูหมักนุ่มทอดกระเทียมหอม กินคู่พริกน้ำปลา</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>89 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="ข้าวพริกแกงหมูกรอบ">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-bowl-rice me-1"></i>อาหารจานเดียว
-                </span>
-                <span class="badge text-bg-danger">เผ็ดกลาง</span>
-              </div>
-              <h2 class="h5 mb-1">ข้าวพริกแกงหมูกรอบ</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">พริกแกงเข้มข้นกับหมูกรอบและถั่วฝักยาว</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>99 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="ข้าวไข่ข้นกุ้ง">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-bowl-rice me-1"></i>อาหารจานเดียว
-                </span>
-                <span class="badge text-bg-info">ใหม่</span>
-              </div>
-              <h2 class="h5 mb-1">ข้าวไข่ข้นกุ้ง</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">ไข่ข้นนุ่มราดบนข้าวหอมมะลิพร้อมกุ้งเด้ง</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>105 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-xl-4">
-          <div class="card h-100 shadow-sm">
-            <div class="ratio ratio-4x3">
-              <img class="w-100 h-100 object-fit-cover rounded-top" src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="ข้าวไก่ผัดเม็ดมะม่วง">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                <span class="badge text-bg-light text-secondary border">
-                  <i class="fa-solid fa-bowl-rice me-1"></i>อาหารจานเดียว
-                </span>
-                <span class="badge text-bg-light text-secondary border">พร้อมขาย</span>
-              </div>
-              <h2 class="h5 mb-1">ข้าวไก่ผัดเม็ดมะม่วง</h2>
-              <p class="text-body-secondary small flex-grow-1 mb-3">ไก่ผัดซอสหวานเค็มกับเม็ดมะม่วงและพริกแห้ง</p>
-              <div class="d-flex justify-content-between align-items-center gap-2 mt-auto">
-                <strong>115 บาท</strong>
-                <a class="btn btn-primary btn-sm" href="/customer/menu-detail">
-                  <i class="fa-solid fa-circle-info me-1"></i>ดูรายละเอียด
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        </template>
       </div>
     </div>
     <div class="tab-pane fade" id="shared-pane" role="tabpanel" aria-labelledby="shared-tab" tabindex="0">
