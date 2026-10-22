@@ -35,10 +35,17 @@ fetch('/api/restaurant/menu').then(res => res.json()).then(data => {
         short("เครื่องดื่ม", "drink-container", "drink-template")
         short("ของหวาน", "sweet-container", "sweet-template")
         short("ชุดเซ็ต", "set-container", "set-template")
-        function menu_count(name,) {
-            data.data.list.filter(item => item.category === name).length
-
+        function menu_count(name, id) {
+            const meaow = data.data.list.filter(item => item.category === name).length
+            document.getElementById(id).textContent = `${meaow} เมนู`
         }
+        menu_count("อาหารจานเดียว", "food-plate")
+        menu_count("กับข้าว", "kab")
+        menu_count("ของทานเล่น", "eat-play")
+        menu_count("เส้นและแกง", "noodle-curry")
+        menu_count("ของหวาน", "sweet")
+        menu_count("เครื่องดื่ม", "drink")
+        menu_count("ชุดเซ็ต", "set")
     }
     else {
         console.log(data)
