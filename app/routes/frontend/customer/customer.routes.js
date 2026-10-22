@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
     res.render(path.join(__dirname, '../../../../views/page/customer/index.ejs'), {
         layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
         styles: [''],
-        scripts: ['']
+        scripts: ['/assets/js/customer/menu.js']
     })
 })
 router.get('/cart', (req, res) => {
