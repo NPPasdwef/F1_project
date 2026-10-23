@@ -9,6 +9,7 @@ router.get('/', (req, res) => {
         scripts: ['/assets/js/customer/menu.js']
     })
 })
+
 router.get('/cart', (req, res) => {
     res.render(path.join(__dirname, '../../../../views/page/customer/cart.ejs'), {
         layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
@@ -31,6 +32,13 @@ router.get('/history', (req, res) => {
     })
 })
 router.get('/menu-detail', (req, res) => {
+    res.render(path.join(__dirname, '../../../../views/page/customer/menu-detail.ejs'), {
+        layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
+        styles: [''],
+        scripts: ['/assets/js/customer/menu-detail.js']
+    })
+})
+router.get('/menu-detail/:id', (req, res) => {
     res.render(path.join(__dirname, '../../../../views/page/customer/menu-detail.ejs'), {
         layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
         styles: [''],

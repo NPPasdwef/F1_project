@@ -465,6 +465,7 @@ module.exports = {
         res.status(200).json({
             status: 200,
             data: {
+                id: 1,
                 topping: [{
                     id: 1,
                     name: "ไข่ดาว",
@@ -495,8 +496,9 @@ module.exports = {
                 {
                     id: 4,
                     name: "เผ็ดมาก"
-                }
-                ]
+                }],
+                price: "95",
+                name: "ข้าวกะเพราไก่ไข่ดาว"
             }
         })
     }

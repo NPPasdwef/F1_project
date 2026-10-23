@@ -11,6 +11,7 @@ fetch('/api/restaurant/menu').then(res => res.json()).then(data => {
             clone.querySelector('[data-role="name"]').textContent = element.name
             clone.querySelector('[data-role="description"]').textContent = element.description
             clone.querySelector('[data-role="price"]').textContent = element.price
+            clone.querySelector('[data-role="link"]').href = `/customer/menu-detail/${element.id}`
             container.appendChild(clone)
         });
         function short(name, container, template) {
