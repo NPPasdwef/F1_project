@@ -34,7 +34,7 @@ router.get('/menu-detail', (req, res) => {
     res.render(path.join(__dirname, '../../../../views/page/customer/menu-detail.ejs'), {
         layout: path.join(__dirname, '../../../../views/layouts/main.layout.ejs'),
         styles: [''],
-        scripts: ['']
+        scripts: ['/assets/js/customer/menu-detail.js']
     })
 })
 router.get('/order-status', (req, res) => {

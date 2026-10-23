@@ -1,3 +1,5 @@
+const { name } = require("ejs")
+
 module.exports = {
     overviws: async (req, res) => {
         res.status(200).json({
@@ -72,6 +74,7 @@ module.exports = {
             }
         })
     },
+
     menu: async (req, res) => {
         res.status(200).json({
             status: 200,
@@ -453,6 +456,45 @@ module.exports = {
                     "description": "ข้าวเหนียวมะม่วง บัวลอย และเฉาก๊วยนมสด",
                     "price": 199,
                     "image": "/assets/img/upload/menu/set/menu-42.jpg"
+                }
+                ]
+            }
+        })
+    },
+    menu_detail: async (req, res) => {
+        res.status(200).json({
+            status: 200,
+            data: {
+                topping: [{
+                    id: 1,
+                    name: "ไข่ดาว",
+                    add: 10
+                },
+                {
+                    id: 2,
+                    name: "เพิ่มข้าว",
+                    add: 10
+                }, {
+                    id: 3,
+                    name: "ไข่เจียวกรอบ",
+                    add: 15
+                }],
+                spicy_level: [{
+                    id: 1,
+                    name: "ไม่เผ็ด"
+                },
+                {
+                    id: 2,
+                    name: "เผ็ดน้อย"
+                },
+                {
+                    id: 3,
+                    name: "เผ็ดกลาง"
+
+                },
+                {
+                    id: 4,
+                    name: "เผ็ดมาก"
                 }
                 ]
             }

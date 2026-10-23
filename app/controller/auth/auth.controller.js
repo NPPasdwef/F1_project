@@ -1,5 +1,3 @@
-const { name } = require("ejs")
-
 module.exports = {
     register: async (req, res) => {
         res.status(200).json({
@@ -24,7 +22,9 @@ module.exports = {
                 id: "1",
                 name: "rungrot",
                 role: "admin",
-                table: null
+                table: null,
+                score: 100000,
+                user_level: "Diamond"
             }
         })
     }

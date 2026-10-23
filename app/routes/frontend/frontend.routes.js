@@ -16,4 +16,5 @@ router.use('/auth', require('./auth/auth.routes.js'))
 router.use('/cashier', require('./cashier/cashier.routes.js'))
 router.use('/kitchen', require("./kitchen/kitchen.routes.js"))
 router.use('/pos', require('./pos/pos.routes.js'))
+
 module.exports = router;
